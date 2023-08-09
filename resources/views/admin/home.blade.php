@@ -1,4 +1,4 @@
-<html>
+{{-- <html>
 
     <head>
 
@@ -13,7 +13,7 @@
 
     </body>
 
-</html>
+</html> --}}
 
 <x-app-layout>
    
