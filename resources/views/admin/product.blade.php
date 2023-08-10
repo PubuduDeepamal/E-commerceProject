@@ -11,6 +11,12 @@
           font-size:25px;
 
         }
+
+        label{
+          display: inline-block;
+          width: 200px
+        }
+
       </style>
   </head>
   <body>  
@@ -48,7 +54,7 @@
         </div>
 
         <div style="padding: 15px">
-          <input type="submit"> 
+          <input class="btn btn-success" type="submit"> 
         </div>
 
       </form>
