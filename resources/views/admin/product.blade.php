@@ -31,6 +31,18 @@
           <h1 class="title">Add Product</h1>
         
 
+        @if(session()->has('message'))
+
+        <div class="alert alert-success">
+
+          {{session()->get('message')}}
+
+        <button type="button" class="close" data-dismiss="alert"> X </button>
+
+        </div>
+
+        @endif
+
         <form action="{{ url('uploadproduct') }}" method="post" enctype="multipart/form-data" >
 
           @csrf
@@ -52,7 +64,7 @@
 
         <div style="padding: 15px">
           <label>Quantity</label>
-          <input style="color:black;" type="text" name="quantity" placeholder="Enter product Quantity" required=""> 
+          <input style="color:black;" type="number" name="quantity" placeholder="Enter product Quantity" required=""> 
         </div>
 
         <div style="padding: 15px">
