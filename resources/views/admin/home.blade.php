@@ -338,6 +338,15 @@
                   <p class="p-3 mb-0 text-center">See all notifications</p>
                 </div>
               </li>
+
+              <li>
+
+                <x-app-layout>
+   
+                </x-app-layout>
+                
+              </li>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-bs-toggle="dropdown">
                   <div class="navbar-profile">
