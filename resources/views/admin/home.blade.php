@@ -186,7 +186,8 @@
         </ul>
       </nav>
       <!-- partial -->
-    
+
+      @include('admin.navbar')
         <!-- partial -->
         <div class="main-panel">
           <div class="content-wrapper">
