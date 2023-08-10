@@ -24,8 +24,8 @@
   </head>
   <body>
 
-      <!-- partial -->
-
+    
+      @include('admin.sidebar')
       @include('admin.navbar')
         <!-- partial -->
         <div class="main-panel">
