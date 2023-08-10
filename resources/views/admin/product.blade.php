@@ -54,7 +54,7 @@
 
         <div style="padding: 15px">
           <label>Product Price</label>
-          <input style="color:black;" type="number" name="Price" placeholder="Enter product Price" required=""> 
+          <input style="color:black;" type="number" name="price" placeholder="Enter product Price" required=""> 
         </div>
 
         <div style="padding: 15px">
