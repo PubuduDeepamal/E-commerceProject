@@ -21,10 +21,40 @@
           <h1 class="title">Add Product</h1>
         
 
+        <form>
+
         <div style="padding: 15px">
           <label>Product Tittle</label>
-          <input type="text" name="title" placeholder="Giv a product title" required=""> 
+          <input type="text" name="title" placeholder="Enter product title" required=""> 
         </div>
+
+        <div style="padding: 15px">
+          <label>Product Price</label>
+          <input type="number" name="Price" placeholder="Enter product Price" required=""> 
+        </div>
+
+        <div style="padding: 15px">
+          <label>Desripition</label>
+          <input type="text" name="des" placeholder="Enter product Desripition" required=""> 
+        </div>
+
+        <div style="padding: 15px">
+          <label>Quantity</label>
+          <input type="text" name="quantity" placeholder="Enter product Quantity" required=""> 
+        </div>
+
+        <div style="padding: 15px">
+          <input type="file" name="file"> 
+        </div>
+
+        <div style="padding: 15px">
+          <input type="submit"> 
+        </div>
+
+      </form>
+
+
+
       </div>
       </div>
 
