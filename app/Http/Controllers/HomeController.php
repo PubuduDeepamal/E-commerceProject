@@ -25,7 +25,9 @@ class HomeController extends Controller
 
         else
         {
-            return view('user.home');
+            $data = Product::all();
+
+            return view('user.home',compact('data'));
         }
     }
 
