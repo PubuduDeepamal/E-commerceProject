@@ -17,6 +17,10 @@
           width: 200px
         }
 
+        input {
+          color: black; 
+        }
+
       </style>
   </head>
   <body>  
