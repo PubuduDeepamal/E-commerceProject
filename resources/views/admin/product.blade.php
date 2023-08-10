@@ -9,6 +9,7 @@
           color: white; 
           padding-top: 25px;
           font-size:25px;
+
         }
       </style>
   </head>
@@ -18,10 +19,15 @@
       <div class="container-fluid page-body-wrapper">
         <div class="container" align="center">
           <h1 class="title">Add Product</h1>
-        </div>
-
         
+
+        <div style="padding: 15px">
+          <label>Product Tittle</label>
+          <input type="text" name="title" placeholder="Giv a product title" required=""> 
+        </div>
       </div>
+      </div>
+
       @include('admin.script')    
   </body>
 </html>
