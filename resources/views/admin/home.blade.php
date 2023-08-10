@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    @include('admin.css')
+      @include('admin.css')
   </head>
-  <body>
-
-    
+  <body>  
       @include('admin.sidebar')
       @include('admin.navbar')
       @include('admin.body')
-      @include('admin.script')
-
-       
+      @include('admin.script')    
   </body>
 </html>
