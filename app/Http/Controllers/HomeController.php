@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
+
+
 
 class HomeController extends Controller
 {
@@ -34,7 +38,10 @@ class HomeController extends Controller
         }
         else
         {
-            return view('user.home');
+
+            $data = Product::all();
+
+            return view('user.home',compact('data'));
         }
         
     }
