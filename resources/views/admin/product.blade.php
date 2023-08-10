@@ -27,7 +27,9 @@
           <h1 class="title">Add Product</h1>
         
 
-        <form>
+        <form action="{{ url('uploadproduct') }}" method="post" enctype="multipart/form-data" >
+
+          @csrf
 
         <div style="padding: 15px">
           <label>Product Tittle</label>
