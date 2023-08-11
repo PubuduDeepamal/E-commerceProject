@@ -1109,5 +1109,9 @@ footer .inner-content p a {
 		font-size: 38px;
 	}
 
+	.pagination {
+		margin-left: 116%;
+	}
+
 
   }
