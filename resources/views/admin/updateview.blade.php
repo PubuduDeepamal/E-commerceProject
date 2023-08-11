@@ -52,7 +52,7 @@
 
 
 
-        <form action="{{ url('uploadproduct') }}" method="post" enctype="multipart/form-data" >
+        <form action="{{ url('updateproduct', $data->id) }}" method="post" enctype="multipart/form-data" >
 
           @csrf
 
