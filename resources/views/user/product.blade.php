@@ -37,7 +37,7 @@
 
         @endforeach
 
-        @if (method_exists($data, 'link'))
+        @if (method_exists($data, 'links'))
           
 
       <div class="d-flex justify-content-center">
