@@ -2,6 +2,25 @@
 <html lang="en">
   <head>
       @include('admin.css')
+
+      <style>
+
+        .title{
+          padding-bottom: 40px;
+          color: white; 
+          padding-top: 25px;
+          font-size:25px;
+          padding-top: 80px;
+          font-size:48px;
+          font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #fonttable{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+      </style>
   </head>
   <body>  
       @include('admin.sidebar')
@@ -25,10 +44,10 @@
     
             @endif
 
+            <h1 class="title">Product Inventory</h1>
 
 
-
-            <table>
+            <table id="fonttable">
 
                 <tr style="background-color:gray">
 
