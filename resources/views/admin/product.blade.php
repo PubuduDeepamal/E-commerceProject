@@ -31,6 +31,9 @@
           <h1 class="title">Add Product</h1>
         
 
+
+          
+
         @if(session()->has('message'))
 
         <div class="alert alert-success">
@@ -42,6 +45,9 @@
         </div>
 
         @endif
+
+
+
 
         <form action="{{ url('uploadproduct') }}" method="post" enctype="multipart/form-data" >
 
