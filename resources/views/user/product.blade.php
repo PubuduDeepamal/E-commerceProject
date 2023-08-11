@@ -30,6 +30,8 @@
               <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
               <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
               <p id="fonyfamily">{{ $product->description }}</p>
+
+              <a class="btn btn-primary" href="">Add Cart</a>
               
             </div>
           </div>
