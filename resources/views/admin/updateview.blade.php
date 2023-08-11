@@ -7,19 +7,40 @@
       <style>
 
         .title{
+          padding-bottom: 40px;
           color: white; 
-          padding-top: 25px;
-          font-size:25px;
+          padding-top: 80px;
+          font-size:48px;
+          font-family: 'Times New Roman', Times, serif;
 
         }
 
         label{
           display: inline-block;
-          width: 200px
+          width: 200px;
+          font-family: 'Times New Roman', Times, serif;
         }
 
         input {
           color: black; 
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        #imginput{
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        #subbutton{
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        .btn-success:not(.btn-light):not(.btn-secondary) {
+          font-size: 20px;
+        }
+
+        #oldimage{
+          font-family: 'Times New Roman', Times, serif;
+          padding-bottom: 15px;
         }
 
       </style>
@@ -31,12 +52,8 @@
 
       <div class="container-fluid page-body-wrapper">
         <div class="container" align="center">
-          <h1 class="title">Add Product</h1>
+          <h1 class="title">Update Product</h1>
         
-
-
-          
-
         @if(session()->has('message'))
 
         <div class="alert alert-success">
@@ -77,16 +94,16 @@
         </div>
 
         <div style="padding: 15px">
-            <label>Old image</label>
+            <label id="oldimage">Old image</label>
             <img height="100" width="100" src="/productimage/{{ $data->image }}">
           </div>
 
-        <div style="padding: 15px">
+        <div style="padding: 15px" id="imginput">
             <label>Change the image</label>
           <input type="file" name="file"> 
         </div>
 
-        <div style="padding: 15px">
+        <div style="padding: 15px" id="subbutton">
           <input class="btn btn-success" type="submit"> 
         </div>
 
