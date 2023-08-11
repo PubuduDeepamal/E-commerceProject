@@ -93,12 +93,7 @@ https://templatemo.com/tm-546-sixteen-clothing
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
-        <div class="banner-item-01">
-        </div>
-      </div>
-    </div>
+    @include('user.banner')
     <!-- Banner Ends Here -->
 
       @include('user.product')
@@ -124,6 +119,9 @@ https://templatemo.com/tm-546-sixteen-clothing
         </div>
       </div>
     </div>
+
+
+    @include('user.banner2')
 
     
     <footer>
