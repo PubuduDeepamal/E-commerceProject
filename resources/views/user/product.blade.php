@@ -5,6 +5,18 @@
           <div class="section-heading" id="section-heading">
             <h2>Latest Products</h2>
             <a href="products.html" id="fonyfamily">view all products <i class="fa fa-angle-right"></i></a>
+
+            <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
+
+              @csrf
+
+              <input class="form-control" type="search" name="search" placeholder="Search">
+
+              <input class="btn btn-success" type="submit" value="Search" placeholder="Search">
+
+            </form>
+
+
           </div>
         </div>
 
@@ -25,11 +37,16 @@
 
         @endforeach
 
+        @if (method_exists($data, 'link'))
+          
+
       <div class="d-flex justify-content-center">
 
         {!! $data->links() !!}
 
       </div>
+
+      @endif
 
       </div>
     </div>
