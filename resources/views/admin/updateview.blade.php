@@ -58,25 +58,31 @@
 
         <div style="padding: 15px">
           <label>Product Tittle</label>
-          <input style="color:black;" type="text" name="title" placeholder="Enter product title" required=""> 
+          <input style="color:black;" type="text" name="title" value="{{ $data->title }}" required=""> 
         </div>
 
         <div style="padding: 15px">
           <label>Product Price</label>
-          <input style="color:black;" type="number" name="price" placeholder="Enter product Price" required=""> 
+          <input style="color:black;" type="number" name="price" value="{{ $data->price }}" required=""> 
         </div>
 
         <div style="padding: 15px">
           <label>Desripition</label>
-          <input style="color:black;" type="text" name="des" placeholder="Enter product Desripition" required=""> 
+          <input style="color:black;" type="text" name="des" value="{{ $data->description }}"  required=""> 
         </div>
 
         <div style="padding: 15px">
           <label>Quantity</label>
-          <input style="color:black;" type="number" name="quantity" placeholder="Enter product Quantity" required=""> 
+          <input style="color:black;" type="number" name="quantity" value="{{ $data->quantity }}" required=""> 
         </div>
 
         <div style="padding: 15px">
+            <label>Old image</label>
+            <img height="100" width="100" src="/productimage/{{ $data->image }}">
+          </div>
+
+        <div style="padding: 15px">
+            <label>Change the image</label>
           <input type="file" name="file"> 
         </div>
 
