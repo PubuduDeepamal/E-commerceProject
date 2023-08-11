@@ -57,4 +57,13 @@ class AdminController extends Controller
      return redirect()->back()->with('message','Product Delete Successfully');
 
    }
+
+   public function updateview($id)
+   {
+       $data=product::find($id);
+
+       return view('admin.updateview',compact('data'));
+
+
+   }
 }
