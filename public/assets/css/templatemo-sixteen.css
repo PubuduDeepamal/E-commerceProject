@@ -82,10 +82,12 @@ a.filled-button:hover {
 }
 
 .section-heading h2 {
+	text-align: center;
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: bold;
 	color: #1e1e1e;
 	margin-bottom: 15px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .products-heading {
@@ -498,12 +500,15 @@ header .navbar {
 .best-features img {
 	width: 100%;
 	overflow: hidden;
+	margin-top: 70px;
 }
 
 .best-features h4 {
-	font-size: 17px;
+	font-weight: bold;
+	font-size: 18px;
 	color: #1a6692;
 	margin-bottom: 20px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .best-features ul.featured-list li {
@@ -512,16 +517,19 @@ header .navbar {
 }
 
 .best-features p {
+	font-size: 17px;
 	margin-bottom: 25px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .best-features ul.featured-list li a {
-	font-size: 14px;
+	font-size: 16px;
 	color: #4a4a4a;
 	font-weight: 300;
 	transition: all .3s;
 	position: relative;
 	padding-left: 13px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .best-features ul.featured-list li a:before {
@@ -1058,3 +1066,24 @@ footer .inner-content p a {
 		bottom: 0;
 	}
 }
+
+
+@media (max-width: 768px) {
+	.best-features p {
+		text-align: center;
+	}
+
+	ul {
+		text-align: center;
+	}
+
+	.best-features h4 {
+		text-align: center;
+	}
+
+	.best-features img {
+		margin-top:5px;
+	}
+
+
+  }
