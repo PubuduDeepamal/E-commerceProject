@@ -27,14 +27,14 @@
                     
                 
 
-                <tr style="background-color:black; align-items:center;">
+                <tr align="center" style="background-color:black;">
 
                     <td>{{ $product->title }}</td>
                     <td>{{ $product->description }}</td>
                     <td>{{ $product->quantity }}</td>
                     <td>{{ $product->price }}</td>
                     <td>
-                        <img height="200" width="200" src="/productimage/{{ $product->image }}">
+                        <img height="100px" width="100px" src="/productimage/{{ $product->image }}">
                     </td>
 
                 </tr>
