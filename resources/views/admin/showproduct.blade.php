@@ -8,7 +8,7 @@
       @include('admin.navbar')
 
 
-      <div class="container-fluid page-body-wrapper">
+      <div style="padding-bottom: 30px;" class="container-fluid page-body-wrapper">
         <div class="container" align="center">
 
             <table>
@@ -20,6 +20,8 @@
                     <td style="padding: 20px">Quntity </td>
                     <td style="padding: 20px">Price </td>
                     <td style="padding: 20px">Image </td>
+                    <td style="padding: 20px">Update </td>
+                    <td style="padding: 20px">Delete </td>
 
                 </tr>
 
