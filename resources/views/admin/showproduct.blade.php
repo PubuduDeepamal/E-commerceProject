@@ -23,15 +23,23 @@
 
                 </tr>
 
+                @foreach ($data as $product)
+                    
+                
+
                 <tr style="background-color:black; align-items:center;">
 
-                    <td>Title </td>
-                    <td>Description </td>
-                    <td>Quntity </td>
-                    <td>Price </td>
-                    <td>Image </td>
+                    <td>{{ $product->title }}</td>
+                    <td>{{ $product->description }}</td>
+                    <td>{{ $product->quantity }}</td>
+                    <td>{{ $product->price }}</td>
+                    <td>
+                        <img height="200" width="200" src="/productimage/{{ $product->image }}">
+                    </td>
 
                 </tr>
+
+                @endforeach
 
             </table>
 
