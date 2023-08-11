@@ -548,6 +548,10 @@ header .navbar {
 	font-family: 'Times New Roman', Times, serif;
 }
 
+#fonyfamily{
+	font-family: 'Times New Roman', Times, serif;
+}
+
 .best-features ul.featured-list li a:before {
 	content: '';
 	width: 5px;
