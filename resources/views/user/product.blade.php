@@ -10,9 +10,9 @@
 
               @csrf
 
-              <input class="form-control" type="search" name="search" placeholder="Search">
+              <input class="form-control" style="height: 40px; font-family: 'Times New Roman', Times, serif;" type="search" name="search" placeholder="Search">
 
-              <input class="btn btn-success" type="submit" value="Search" placeholder="Search">
+              <input class="btn btn-success" style="margin-left: 8px; font-family: 'Times New Roman', Times, serif;" type="submit" value="Search" placeholder="Search">
 
             </form>
 
