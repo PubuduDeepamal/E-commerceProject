@@ -11,6 +11,23 @@
       <div style="padding-bottom: 30px;" class="container-fluid page-body-wrapper">
         <div class="container" align="center">
 
+
+
+            @if(session()->has('message'))
+
+            <div class="alert alert-success">
+    
+              {{session()->get('message')}}
+    
+            <button type="button" class="close" data-dismiss="alert"> X </button>
+    
+            </div>
+    
+            @endif
+
+
+
+
             <table>
 
                 <tr style="background-color:gray">
