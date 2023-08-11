@@ -83,7 +83,7 @@ a.filled-button:hover {
 
 .section-heading h2 {
 	text-align: center;
-	font-size: 28px;
+	font-size: 48px;
 	font-weight: bold;
 	color: #1e1e1e;
 	margin-bottom: 15px;
@@ -500,7 +500,7 @@ header .navbar {
 .best-features img {
 	width: 100%;
 	overflow: hidden;
-	margin-top: 70px;
+	margin-top: 80px;
 }
 
 .best-features h4 {
@@ -1083,6 +1083,10 @@ footer .inner-content p a {
 
 	.best-features img {
 		margin-top:5px;
+	}
+
+	.section-heading h2 {
+		font-size: 38px;
 	}
 
 
