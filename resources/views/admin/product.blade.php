@@ -6,19 +6,35 @@
       <style>
 
         .title{
+          padding-bottom: 40px;
           color: white; 
-          padding-top: 25px;
-          font-size:25px;
+          padding-top: 80px;
+          font-size:48px;
+          font-family: 'Times New Roman', Times, serif;
 
         }
 
         label{
           display: inline-block;
-          width: 200px
+          width: 200px;
+          font-family: 'Times New Roman', Times, serif;
         }
 
         input {
           color: black; 
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        #imginput{
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        #subbutton{
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        .btn-success:not(.btn-light):not(.btn-secondary) {
+          font-size: 20px;
         }
 
       </style>
@@ -73,11 +89,11 @@
           <input style="color:black;" type="number" name="quantity" placeholder="Enter product Quantity" required=""> 
         </div>
 
-        <div style="padding: 15px">
+        <div style="padding: 15px" id="imginput">
           <input type="file" name="file"> 
         </div>
 
-        <div style="padding: 15px">
+        <div style="padding: 15px" id="subbutton">
           <input class="btn btn-success" type="submit"> 
         </div>
 
