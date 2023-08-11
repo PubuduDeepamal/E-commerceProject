@@ -90,7 +90,7 @@
             <span class="menu-icon">
               <i class="mdi mdi-file-document-box"></i>
             </span>
-            <span class="menu-title">Product</span>
+            <span class="menu-title">Add New Products</span>
           </a>
         </li>
       </ul>
