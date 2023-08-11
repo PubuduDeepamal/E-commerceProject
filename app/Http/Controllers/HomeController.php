@@ -52,10 +52,20 @@ class HomeController extends Controller
     {
             $search = $request->search;
 
+
+            if($search=='')
+            {
+
+                $data = Product::paginate(3);
+
+                return view('user.home',compact('data'));
+
+            }
+
             $data = product::where('title', 'Like' , '%' .$search. '%')->get();
 
             return view('user.home', compact('data'));
 
-            
+
     }
 }
