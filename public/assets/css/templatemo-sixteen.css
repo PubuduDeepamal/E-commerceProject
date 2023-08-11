@@ -407,6 +407,7 @@ header .navbar {
 
 .latest-products {
 	margin-top: 100px;
+	background-color: #f2f3f8;
 }
 
 .latest-products .section-heading a {
@@ -416,6 +417,14 @@ header .navbar {
 	font-size: 13px;
 	font-weight: 700;
 	color: #f33f3f;
+}
+
+#section-heading{
+	padding-top: 30px;
+}
+
+.latest-products {
+    padding-bottom: 30px;
 }
 
 .product-item {
