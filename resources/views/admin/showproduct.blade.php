@@ -38,6 +38,9 @@
                     <td>
                         <img height="100px" width="100px" src="/productimage/{{ $product->image }}">
                     </td>
+                    <td>
+                        <a class="btn btn-primary" href="">Update</a>
+                    </td>
 
                 </tr>
 
