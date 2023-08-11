@@ -40,3 +40,5 @@ route::get('/product',[AdminController::class,'product']);
 route::post('/uploadproduct',[AdminController::class,'uploadproduct']);
 
 route::get('/showproduct',[AdminController::class,'showproduct']);
+
+route::get('/deleteproduct/{id}',[AdminController::class,'deleteproduct']);
