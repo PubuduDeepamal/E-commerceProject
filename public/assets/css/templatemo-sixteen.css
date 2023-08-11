@@ -420,7 +420,7 @@ header .navbar {
 }
 
 #section-heading{
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 .latest-products {
@@ -428,8 +428,15 @@ header .navbar {
 }
 
 .product-item {
-	border: 1px solid #eee;
+	border: 2px solid #eee;
 	margin-bottom: 30px;
+	box-shadow: #4a4a4a;
+}
+
+.product-item:hover {
+	border: 2px solid #0196db;
+	margin-bottom: 30px;
+	box-shadow: #4a4a4a;
 }
 
 .product-item .down-content {
