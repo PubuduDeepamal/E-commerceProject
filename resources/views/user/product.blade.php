@@ -1,15 +1,3 @@
-@if(session()->has('message'))
-
-        <div class="alert alert-success">
-
-          {{session()->get('message')}}
-
-        <button type="button" class="close" data-dismiss="alert"> X </button>
-
-        </div>
-
-        @endif
-
 
 <div class="latest-products">
     <div class="container">
