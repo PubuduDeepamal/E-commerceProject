@@ -1,4 +1,19 @@
 
+<style>
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+#buttoncolor{
+  color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+</style>
+
 <div class="latest-products">
     <div class="container">
       <div class="row">
@@ -40,7 +55,7 @@
 
                 <br>
 
-                <input class="btn btn-primary" type="submit" value="Add Cart">
+                <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
               
               </form>
               
