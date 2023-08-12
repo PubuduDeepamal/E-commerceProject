@@ -24,14 +24,14 @@
         @foreach ($data as $product)
 
         <div class="col-md-4">
-          <div class="product-item" style="height: 520px">
+          <div class="product-item" style="height: 560px">
             <a href="#"><img height="300" width="150" src="/productimage/{{$product->image}}" alt=""></a>
             <div class="down-content">
               <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
               <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
               <p id="fonyfamily">{{ $product->description }}</p>
 
-              <a class="btn btn-primary" href="">Add Cart</a>
+              <a class="btn btn-primary" id="fonyfamily" href="">Add Cart</a>
               
             </div>
           </div>
@@ -42,7 +42,7 @@
         @if (method_exists($data, 'links'))
           
 
-      <div class="d-flex justify-content-center">
+      <div class="d-flex justify-content-center" id="fonyfamily">
 
         {!! $data->links() !!}
 
