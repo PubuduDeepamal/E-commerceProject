@@ -57,16 +57,16 @@
             Quick Links
           </h6>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">Health Advice</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Health Advice</a>
           </p>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">Dogs Products</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Dogs Products</a>
           </p>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">Cats Products</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Cats Products</a>
           </p>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">Bird Products</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Bird Products</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -81,13 +81,13 @@
             <a href="#!" id="fonyfamily" class="text-reset text-reset123">Home</a>
           </p>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">About Us</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">About Us</a>
           </p>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">Products</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Products</a>
           </p>
           <p>
-            <a href="#!" id="fonyfamily" class="text-reset">Contact Us</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Contact Us</a>
           </p>
         </div>
         <!-- Grid column -->
