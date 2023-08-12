@@ -1,10 +1,4 @@
-/*
 
-TemplateMo 546 Sixteen Clothing
-
-https://templatemo.com/tm-546-sixteen-clothing
-
-*/
 body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
@@ -763,6 +757,22 @@ footer .inner-content p a {
 	color: #f33f3f;
 	font-weight: 500;
 	margin-bottom: 20px;
+}
+
+
+.vtitle{
+	font-size: 50px;
+	font-weight: bold;
+}
+
+#boxborder{
+	border-radius: 20px;
+	border-color: 2px solid #4a4a4a;
+}
+
+#boxborder:hover{
+	border-radius: 20px;
+	border: 2px solid #0196db;
 }
 
 
