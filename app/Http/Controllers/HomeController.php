@@ -97,7 +97,7 @@ class HomeController extends Controller
 
             $cart->save(); 
 
-            return redirect() ->back();
+            return redirect() ->back()->with('message','Product Added Successfully');
         }
 
         else
