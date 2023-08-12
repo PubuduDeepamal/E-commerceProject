@@ -1,5 +1,5 @@
 <div class="container mt-5">
-    <div class="card p-4">
+    <div class="card p-4" style="background-color: #f7f7f7;">
         <h1 class="text-center" id="fonyfamily">Pet Shop Voucher</h1>
         <p class="text-center" id="fonyfamily">Congratulations! You've received a discount voucher at our Pet Shop.</p>
         <div class="row mt-4">
