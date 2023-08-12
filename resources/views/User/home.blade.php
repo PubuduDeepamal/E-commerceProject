@@ -46,13 +46,10 @@
     
       @include('user.heder')
       @include('user.banner')
-      @include('user.product')
       @include('user.homeabout')
-  
-     
-   
-    @include('user.voucher')
-    @include('user.banner2')
+      @include('user.product')
+      @include('user.voucher')
+      @include('user.banner2')
 
     
     <footer>
