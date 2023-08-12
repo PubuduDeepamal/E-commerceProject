@@ -474,6 +474,10 @@ header .navbar {
 	font-size: 12px;
 }
 
+.text-reset123{
+	color: #4a4a4a;
+}
+
 .product-item .down-content span {
 	position: absolute;
 	right: 30px;
