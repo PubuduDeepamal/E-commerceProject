@@ -3,7 +3,7 @@
   <!-- Section: Social media -->
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style="background-color: #ffffff">
     <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
+    <div class="me-5 d-none d-lg-block" id="fonyfamily">
       <span>Get connected with us on social networks:</span>
     </div>
     <!-- Left -->
@@ -42,11 +42,10 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary"></i>JACK PETS
+            <i class="fas fa-gem me-3 text-secondary" id="fonyfamily"></i>JACK PETS
           </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
+          <p id="footerfontsize">
+            Welcome to our pet shop, where you'll find an incredible selection of furry friends, high-quality products, and everything you need to make your pet's tail wag with joy!
           </p>
         </div>
         <!-- Grid column -->
@@ -54,20 +53,20 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
+          <h6 class="text-uppercase fw-bold mb-4" id="fonyfamily">
+            Quick Links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="#!" id="fonyfamily" class="text-reset">Health Advice</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#!" id="fonyfamily" class="text-reset">Dogs Products</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
+            <a href="#!" id="fonyfamily" class="text-reset">Cats Products</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="#!" id="fonyfamily" class="text-reset">Bird Products</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -75,20 +74,20 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
+          <h6 class="text-uppercase fw-bold mb-4" id="fonyfamily">
+            Quick Links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="#!" id="fonyfamily" class="text-reset text-reset123">Home</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="#!" id="fonyfamily" class="text-reset">About Us</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
+            <a href="#!" id="fonyfamily" class="text-reset">Products</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="#!" id="fonyfamily" class="text-reset">Contact Us</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -96,14 +95,14 @@
         <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-          <p> New York, NY 10012, US</p>
-          <p>
+          <h6 class="text-uppercase fw-bold mb-4" id="fonyfamily">Contact</h6>
+          <p id="fonyfamily"> New York, NY 10012, US</p>
+          <p id="fonyfamily">
            
             info@example.com
           </p>
-          <p> + 01 234 567 88</p>
-          <p> + 01 234 567 89</p>
+          <p id="fonyfamily"> + 01 234 567 88</p>
+          <p id="fonyfamily"> + 01 234 567 89</p>
         </div>
         <!-- Grid column -->
       </div>
@@ -113,7 +112,7 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);" id="fonyfamily">
     © 2021 Copyright & Desing by 
     <a class="text-reset fw-bold"> Pubudu Deepamal</a>
   </div>
