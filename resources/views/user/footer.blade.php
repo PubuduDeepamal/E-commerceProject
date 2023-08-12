@@ -96,13 +96,13 @@
         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4" id="fonyfamily">Contact</h6>
-          <p id="fonyfamily"> New York, NY 10012, US</p>
+          <p id="fonyfamily"> 258/1/4 Ds Senanayake Veediya, Kandy</p>
           <p id="fonyfamily">
            
-            info@example.com
+            jackpets@gmail.com
           </p>
-          <p id="fonyfamily"> + 01 234 567 88</p>
-          <p id="fonyfamily"> + 01 234 567 89</p>
+          <p id="fonyfamily"> +94 076 678 6788</p>
+          <p id="fonyfamily"> +94 076 678 6777</p>
         </div>
         <!-- Grid column -->
       </div>
