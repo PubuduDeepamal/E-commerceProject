@@ -10,6 +10,8 @@ use Illuminate\Support\Facades\Auth;
 
 use App\Models\User;
 
+use App\Models\Cart;
+
 
 
 class HomeController extends Controller
@@ -74,6 +76,27 @@ class HomeController extends Controller
 
         if(Auth::id())
         {
+
+            $user=auth()->user();
+
+            $product=product::find($id);
+
+            $cart=new cart;
+
+            $cart->name=$user->name;
+
+            $cart->phone=$user->phone;
+
+            $cart->address=$user->address;
+
+            $cart->product_title=$product->title;
+
+            $cart->price=$product->price;
+
+            $cart->quantity=$request->quantity;
+
+            $cart->save(); 
+
             return redirect() ->back();
         }
 
