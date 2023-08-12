@@ -68,4 +68,19 @@ class HomeController extends Controller
 
 
     }
+
+    public function addcart(Request $request, $id)
+    {
+
+        if(Auth::id())
+        {
+            return redirect() ->back();
+        }
+
+        else
+        {
+            return redirect('login');
+        }
+
+    }
 }
