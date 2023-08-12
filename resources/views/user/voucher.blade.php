@@ -1,3 +1,11 @@
+<style>
+
+h2{
+    font-size: xx-large;
+}
+</style>
+
+
 <div class="container mt-5">
     <div class="card p-4" style="background-color: #f7f7f7;" id="boxborder">
         <h1 class="text-center vtitle" id="fonyfamily">Pet Shop Voucher</h1>
