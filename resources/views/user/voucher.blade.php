@@ -1,20 +1,17 @@
-<div class="call-to-action">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="inner-content">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h4>Exclusive Pet Shop Voucher</h4>
-                            <p>Discover a world of happiness for your furry friends at our pet shop. From premium pet foods to adorable toys, we have everything your pet needs.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#" class="filled-button">Grab Your Voucher</a>
-                        </div>
-                    </div>
-                </div>
+<div class="container mt-5">
+    <div class="card p-4">
+        <h1 class="text-center">Pet Shop Voucher</h1>
+        <p class="text-center">Congratulations! You've received a discount voucher at our Pet Shop.</p>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2 class="text-center">Voucher Code:</h2>
+                <p class="text-center font-weight-bold">PSV12345</p>
+            </div>
+            <div class="col-md-6">
+                <h2 class="text-center">Discount:</h2>
+                <p class="text-center font-weight-bold">20% off</p>
             </div>
         </div>
+        <p class="text-center mt-4">Valid until: August 31, 2023</p>
     </div>
 </div>
-
