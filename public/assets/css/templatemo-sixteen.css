@@ -470,6 +470,10 @@ header .navbar {
 	font-size: 14px;
 }
 
+#footerfontsize{
+	font-size: 12px;
+}
+
 .product-item .down-content span {
 	position: absolute;
 	right: 30px;
