@@ -12,6 +12,18 @@
     background-color: #28a745;
     border-color: #28a745;
 }
+
+#fonyfamily1{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+@media (max-width: 767px) {
+ 
+  #fonyfamily1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
 </style>
 
 <div class="latest-products">
@@ -20,7 +32,7 @@
         <div class="col-md-12">
           <div class="section-heading" id="section-heading">
             <h2>Latest Products</h2>
-            <a href="products.html" id="fonyfamily">view all products <i class="fa fa-angle-right"></i></a>
+            <a href="products.html" id="fonyfamily1">view all products <i class="fa fa-angle-right"></i></a>
 
             <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
 
