@@ -2,7 +2,7 @@
  <header class="">
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href=""><h2 style="font-family: 'Times New Roman', Times, serif;">JACK <em>Pets</em></h2></a>
+      <a class="navbar-brand" href="/"><h2 style="font-family: 'Times New Roman', Times, serif;">JACK <em>Pets</em></h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
