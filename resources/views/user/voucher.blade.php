@@ -46,7 +46,9 @@
                               </div>
                               <div class="col-md-4">
                                 <a href="{{ route('login') }}"  class="filled-button" style="font-family: 'Times New Roman', Times, serif; width:150px; text-align: center;">Log in</a>
+                                <a href="{{ route('login') }}"  class="filled-button" style="font-family: 'Times New Roman', Times, serif; width:150px; text-align: center;">Register</a>
                               </div>
+                              
                             </div>
                           </div>
                         </div>
