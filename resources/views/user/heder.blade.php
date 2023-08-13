@@ -12,7 +12,7 @@
             <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="/">Home
               <span class="sr-only">(current)</span>
             </a>
-          </li> 
+          </li>
           <li class="nav-item">
             <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="">Our Products</a>
           </li>
@@ -27,11 +27,16 @@
           @if (Route::has('login'))
 
               @auth
-                  
+
+              <li class="nav-item">
+                <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">cart</a>
+              </li>
+
+
                     <x-app-layout>
 
                     </x-app-layout></a>
-               
+
               @else
               <li><a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="{{ route('login') }}" >Log in</a></li>
 
@@ -39,7 +44,7 @@
                   <li> <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="{{ route('register') }}">Register</a></li>
                   @endif
               @endauth
-    
+
       @endif
     </li>
 
