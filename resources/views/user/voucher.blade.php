@@ -5,6 +5,10 @@
     }
     
     a.filled-button:hover {
+        background-color: #007bff;
+    }
+
+    #buttoncolour{
         background-color: #28a745;
     }
     </style>
@@ -46,7 +50,7 @@
                               </div>
                               <div class="col-md-4">
                                 <a href="{{ route('login') }}"  class="filled-button" style="font-family: 'Times New Roman', Times, serif; width:150px; text-align: center;">Log in</a>
-                                <a href="{{ route('register') }}"  class="filled-button" style="font-family: 'Times New Roman', Times, serif; width:150px; text-align: center;">Register</a>
+                                <a href="{{ route('register') }}" id="buttoncolour"  class="filled-button" style="font-family: 'Times New Roman', Times, serif; width:150px; text-align: center;">Register</a>
                               </div>
                               
                             </div>
