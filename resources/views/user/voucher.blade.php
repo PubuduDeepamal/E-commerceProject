@@ -15,6 +15,14 @@
     #buttoncolour:hover {
         background-color: #007bff;
     }
+
+    @media (max-width: 767px) {
+
+        .call-to-action .inner-content .col-md-4
+        {
+            text-align: center;
+        }
+    }
     </style>
     
     <li class="nav-item">
