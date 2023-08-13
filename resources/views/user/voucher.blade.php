@@ -41,7 +41,7 @@ h2{
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
                           </div>
                           <div class="col-md-4">
-                            <a href="#" class="filled-button">Purchase Now</a>
+                            <a href="{{ route('login') }}"  class="filled-button" style="font-family: 'Times New Roman', Times, serif;">Log in</a>
                           </div>
                         </div>
                       </div>
