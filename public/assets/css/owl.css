@@ -1,11 +1,4 @@
-/**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
-/*
- *  Owl Carousel - Core
- */
+
 .owl-carousel {
   display: none;
   width: 100%;
@@ -17,7 +10,7 @@
     position: relative;
     -ms-touch-action: pan-Y;
     touch-action: manipulation;
-    -moz-backface-visibility: hidden;
+    /* -moz-backface-visibility: hidden; */
     /* fix firefox animation glitch */ }
   .owl-carousel .owl-stage:after {
     content: ".";
