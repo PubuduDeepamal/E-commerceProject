@@ -2,25 +2,25 @@
  <header class="">
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><h2 style="font-family: 'Times New Roman', Times, serif;">JACK <em>Pets</em></h2></a>
+      <a class="navbar-brand" href=""><h2 style="font-family: 'Times New Roman', Times, serif;">JACK <em>Pets</em></h2></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="index.html">Home
+            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">Home
               <span class="sr-only">(current)</span>
             </a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="products.html">Our Products</a>
+            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="">Our Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="about.html">About Us</a>
+            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="contact.html">Contact Us</a>
+            <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">Contact Us</a>
           </li>
 
         <li class="nav-item">
