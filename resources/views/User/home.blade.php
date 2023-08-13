@@ -43,6 +43,7 @@
         </div>
     </div> 
     
+    
       @include('user.heder')
       @include('user.banner')
       @include('user.homeabout')
