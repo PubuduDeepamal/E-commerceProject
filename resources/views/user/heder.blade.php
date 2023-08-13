@@ -29,7 +29,9 @@
               @auth
 
               <li class="nav-item">
-                <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">cart</a>
+                <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">
+                    <i class="fas fa-star"></i>
+                    cart</a>
               </li>
 
 
