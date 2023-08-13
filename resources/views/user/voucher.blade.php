@@ -41,8 +41,8 @@ a.filled-button:hover {
                       <div class="inner-content">
                         <div class="row">
                           <div class="col-md-8">
-                            <h4>Creative &amp; Unique <em>Sixteen</em> Products</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                            <h4 style="font-family: 'Times New Roman', Times, serif; font-size:29px">Do you like to get a <em> discount </em> voucher? </h4>
+                            <p style="font-family: 'Times New Roman', Times, serif;">First, you can sign up for the other website. Then you can see the discount voucher.</p>
                           </div>
                           <div class="col-md-4">
                             <a href="{{ route('login') }}"  class="filled-button" style="font-family: 'Times New Roman', Times, serif; width:150px; text-align: center;">Log in</a>
