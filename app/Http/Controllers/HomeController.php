@@ -135,25 +135,25 @@ class HomeController extends Controller
     }
 
     public function confirmorder(Request $request)
-    {
-        $user=auth()->user();
-
-        $name=$user->name;
-
-        $phone=$user->phone;
-
-        $address=$user->address;
-
-        foreach($request->productname as $key => productname)
         {
-            $order= new order;
+            $user = auth()->user();
 
-            $order-> product_name=$request->productname[$key];
+            $name = $user->name;
 
-            $order-> price=$request->price[$key];
+            $phone = $user->phone;
 
-            $order-> quantity=$request->quantity[$key];
+            $address = $user->address;
+
+            foreach ($request->productname as $key => $productname)
+             {
+                $order = new order;
+
+                $order->product_name = $request->productname[$key];
+
+                $order->price = $request->price[$key];
+
+                $order->quantity = $request->quantity[$key];
+            }
         }
 
-    }
 }
