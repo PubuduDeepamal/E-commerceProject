@@ -52,21 +52,21 @@
       <div style="padding: 100px" align="center">
 
         <div class="container mt-5">
-            <h1 class="mb-4">Product List</h1>
+            <h1 class="mb-4" style="font-family: 'Times New Roman', Times, serif; font-size:38px;font-weight:bold">Product List</h1>
             <div class="table-responsive">
                 <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
-                            <th>Product Name</th>
-                            <th>Quantity</th>
-                            <th>Price</th>
+                            <th style="font-family: 'Times New Roman', Times, serif;">Product Name</th>
+                            <th style="font-family: 'Times New Roman', Times, serif;">Quantity</th>
+                            <th style="font-family: 'Times New Roman', Times, serif;">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td style="font-family: 'Times New Roman', Times, serif;"></td>
+                            <td style="font-family: 'Times New Roman', Times, serif;"></td>
+                            <td style="font-family: 'Times New Roman', Times, serif;"></td>
                         </tr>
                     </tbody>
                 </table>
