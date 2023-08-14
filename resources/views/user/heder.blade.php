@@ -29,7 +29,7 @@
               @auth
 
               <li class="nav-item">
-                <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">
+                <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="{{ url('showcart') }}">
                     <i class="fas fa-shopping-cart"></i>
                     Cart[{{ $count }}]</a>
               </li>
