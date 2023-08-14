@@ -120,6 +120,6 @@ class HomeController extends Controller
 
         $count=cart::where('phone',$user->phone)->count();
 
-        return view('user.showcart',compact('count'));
+        return view('user.showcart',compact('count','cart'));
     }
 }
