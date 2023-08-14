@@ -68,14 +68,34 @@
 
 
                         <form>
-                            
+
                         @foreach ($cart as $carts)
 
 
                         <tr>
-                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->product_title }}</td>
-                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->quantity }}</td>
-                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->price }}</td>
+                            <td style="font-family: 'Times New Roman', Times, serif;">
+
+
+                                <input type="text" name="productname[]" value="{{ $carts->product_title }}">
+
+                                {{ $carts->product_title }}
+
+                            </td>
+
+                            <td style="font-family: 'Times New Roman', Times, serif;">
+
+                                <input type="text" name="quantity[]" value="{{ $carts->quantity }}">
+
+                                {{ $carts->quantity }}
+                            </td>
+
+                            <td style="font-family: 'Times New Roman', Times, serif;">
+
+                                <input type="text" name="price[]" value="{{ $carts->price }}">
+
+                                {{ $carts->price }}
+                            </td>
+
                             <td style="font-family: 'Times New Roman', Times, serif;">
                                 <a class="btn btn-danger" href="{{ url('delete',$carts->id) }}">Delete</a>
                             </td>
