@@ -153,7 +153,19 @@ class HomeController extends Controller
                 $order->price = $request->price[$key];
 
                 $order->quantity = $request->quantity[$key];
+
+                $order->name=$name;
+
+                $order->phone=$phone;
+
+                $order->address=$address;
+
+                $order->save();
+
+
             }
+
+            return redirect()->back();
         }
 
 }
