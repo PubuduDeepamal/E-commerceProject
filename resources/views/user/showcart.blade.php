@@ -67,7 +67,9 @@
                         </tr>
 
 
-                        <form>
+                        <form action="{{ url('order') }}" method="POST">
+
+                            @csrf
 
                         @foreach ($cart as $carts)
 
@@ -76,7 +78,7 @@
                             <td style="font-family: 'Times New Roman', Times, serif;">
 
 
-                                <input type="text" name="productname[]" value="{{ $carts->product_title }}">
+                                <input type="text" name="productname[]" value="{{ $carts->product_title }}" hidden="">
 
                                 {{ $carts->product_title }}
 
@@ -84,14 +86,14 @@
 
                             <td style="font-family: 'Times New Roman', Times, serif;">
 
-                                <input type="text" name="quantity[]" value="{{ $carts->quantity }}">
+                                <input type="text" name="quantity[]" value="{{ $carts->quantity }}" hidden="">
 
                                 {{ $carts->quantity }}
                             </td>
 
                             <td style="font-family: 'Times New Roman', Times, serif;">
 
-                                <input type="text" name="price[]" value="{{ $carts->price }}">
+                                <input type="text" name="price[]" value="{{ $carts->price }}" hidden="">
 
                                 {{ $carts->price }}
                             </td>
