@@ -54,6 +54,9 @@
         <div class="container mt-5">
             <h1 class="mb-4" style="font-family: 'Times New Roman', Times, serif; font-size:38px;font-weight:bold">Product List</h1>
             <div class="table-responsive">
+
+            <form>
+
                 <table class="table table-striped table-bordered" style="text-align: center">
 
                         <tr>
@@ -78,6 +81,11 @@
                         @endforeach
 
                 </table>
+
+                <button class="btn btn-success">Confirme Order</button>
+
+            </form>
+
             </div>
         </div>
 
