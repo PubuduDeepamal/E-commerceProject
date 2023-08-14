@@ -86,7 +86,9 @@
     </div>
 
 
-      @include('user.script')
+    @include('user.footer')
+
+    @include('user.script')
 
   </body>
 
