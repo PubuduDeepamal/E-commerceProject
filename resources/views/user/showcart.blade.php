@@ -60,6 +60,7 @@
                             <th style="font-family: 'Times New Roman', Times, serif;">Product Name</th>
                             <th style="font-family: 'Times New Roman', Times, serif;">Quantity</th>
                             <th style="font-family: 'Times New Roman', Times, serif;">Price</th>
+                            <th style="font-family: 'Times New Roman', Times, serif;">Action</th>
                         </tr>
 
                         @foreach ($cart as $carts)
