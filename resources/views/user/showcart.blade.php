@@ -61,12 +61,17 @@
                             <th style="font-family: 'Times New Roman', Times, serif;">Quantity</th>
                             <th style="font-family: 'Times New Roman', Times, serif;">Price</th>
                         </tr>
-                        
+
+                        @foreach ($cart as $carts)
+
+
                         <tr>
-                            <td style="font-family: 'Times New Roman', Times, serif;"></td>
-                            <td style="font-family: 'Times New Roman', Times, serif;"></td>
-                            <td style="font-family: 'Times New Roman', Times, serif;"></td>
+                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->product_title }}</td>
+                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->quantity }}</td>
+                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->price }}</td>
                         </tr>
+
+                        @endforeach
 
                 </table>
             </div>
