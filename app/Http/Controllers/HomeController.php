@@ -116,7 +116,7 @@ class HomeController extends Controller
 
         $user=auth()->user();
 
-        $cart=cart::where('phone',$user->phone);
+        $cart=cart::where('phone',$user->phone)->get();
 
         $count=cart::where('phone',$user->phone)->count();
 
