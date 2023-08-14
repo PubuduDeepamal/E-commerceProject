@@ -18,11 +18,14 @@
     <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
     <link rel="stylesheet" href="assets/css/owl.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+
     <style>
 
       @media (min-width: 640px)
       {
-      .sm\:items-center 
+      .sm\:items-center
       {
           margin-top: -12px;
           align-items: center;
@@ -41,8 +44,8 @@
             <div></div>
             <div></div>
         </div>
-    </div> 
-    
+    </div>
+
       @include('user.heder')
       @include('user.banner')
       @include('user.homeabout')
