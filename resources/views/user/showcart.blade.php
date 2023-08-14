@@ -49,7 +49,7 @@
       @include('user.heder')
 
 
-      <div style="padding: 100px">
+      <div style="padding: 100px" align="center">
 
       <table>
         <tr>
