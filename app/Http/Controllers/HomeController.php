@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 
+use Illuminate\Support\Facades\DB;
+
 use App\Models\User;
 
 use App\Models\Cart;
@@ -166,6 +168,8 @@ class HomeController extends Controller
 
 
             }
+
+            DB::table('cart')->where('phone',$phone)->delete();
 
             return redirect()->back();
         }
