@@ -3,7 +3,7 @@
   <head>
       @include('admin.css')
   </head>
-  <body>  
+  <body>
       @include('admin.sidebar')
       @include('admin.navbar')
       @include('admin.body')
