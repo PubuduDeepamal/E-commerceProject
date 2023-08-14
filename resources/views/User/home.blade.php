@@ -11,6 +11,8 @@
 
     <title>JackPets.lk</title>
 
+    <link rel="icon" type="image/png" href="https://petmart.lk/cdn/shop/files/cat_treats.webp?v=1660719455">
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
