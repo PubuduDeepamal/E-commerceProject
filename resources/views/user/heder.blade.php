@@ -31,7 +31,7 @@
               <li class="nav-item">
                 <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">
                     <i class="fas fa-shopping-cart"></i>
-                    cart</a>
+                    Cart[{{ $count }}]</a>
               </li>
 
 
