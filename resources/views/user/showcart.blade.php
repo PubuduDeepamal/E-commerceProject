@@ -55,20 +55,19 @@
             <h1 class="mb-4" style="font-family: 'Times New Roman', Times, serif; font-size:38px;font-weight:bold">Product List</h1>
             <div class="table-responsive">
                 <table class="table table-striped table-bordered">
-                    <thead>
+
                         <tr>
                             <th style="font-family: 'Times New Roman', Times, serif;">Product Name</th>
                             <th style="font-family: 'Times New Roman', Times, serif;">Quantity</th>
                             <th style="font-family: 'Times New Roman', Times, serif;">Price</th>
                         </tr>
-                    </thead>
-                    <tbody>
+                        
                         <tr>
                             <td style="font-family: 'Times New Roman', Times, serif;"></td>
                             <td style="font-family: 'Times New Roman', Times, serif;"></td>
                             <td style="font-family: 'Times New Roman', Times, serif;"></td>
                         </tr>
-                    </tbody>
+
                 </table>
             </div>
         </div>
