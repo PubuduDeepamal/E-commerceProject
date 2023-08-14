@@ -70,7 +70,9 @@
                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->product_title }}</td>
                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->quantity }}</td>
                             <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->price }}</td>
-                            <td style="font-family: 'Times New Roman', Times, serif;">{{ $carts->price }}</td>
+                            <td style="font-family: 'Times New Roman', Times, serif;">
+                                <a class="btn btn-danger" href="{{ url('delete',$carts->id) }}">Delete</a>
+                            </td>
                         </tr>
 
                         @endforeach
