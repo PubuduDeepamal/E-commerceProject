@@ -160,6 +160,8 @@ class HomeController extends Controller
 
                 $order->address=$address;
 
+                $order->status='not delivered';
+
                 $order->save();
 
 
