@@ -49,7 +49,7 @@
       @include('user.heder')
 
 
-      <div style="padding: 100px" align="center">
+      <div style="padding: 100px; background-color: #f2f3f8;" align="center">
 
         <div class="container mt-5">
             <h1 class="mb-4" style="font-family: 'Times New Roman', Times, serif; font-size:38px;font-weight:bold">Product List</h1>
