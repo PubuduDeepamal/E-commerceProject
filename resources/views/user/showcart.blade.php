@@ -48,6 +48,20 @@
 
       @include('user.heder')
 
+
+      <div style="padding: 100px">
+
+      <table>
+        <tr>
+            <td>Product Name</td>
+            <td>Quantity</td>
+            <td>Price</td>
+        </tr>
+      </table>
+
+    </div>
+
+
       @include('user.script')
 
   </body>
