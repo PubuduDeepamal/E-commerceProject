@@ -55,7 +55,7 @@
             <h1 class="mb-4" style="font-family: 'Times New Roman', Times, serif; font-size:38px;font-weight:bold">Product List</h1>
             <div class="table-responsive">
 
-            <form>
+
 
                 <table class="table table-striped table-bordered" style="text-align: center">
 
@@ -66,6 +66,9 @@
                             <th style="font-family: 'Times New Roman', Times, serif;">Action</th>
                         </tr>
 
+
+                        <form>
+                            
                         @foreach ($cart as $carts)
 
 
