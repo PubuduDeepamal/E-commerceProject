@@ -51,13 +51,29 @@
 
       <div style="padding: 100px" align="center">
 
-      <table>
-        <tr>
-            <td>Product Name</td>
-            <td>Quantity</td>
-            <td>Price</td>
-        </tr>
-      </table>
+        <div class="container mt-5">
+            <h1 class="mb-4">Product List</h1>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
 
     </div>
 
