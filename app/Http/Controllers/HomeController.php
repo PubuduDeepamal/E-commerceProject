@@ -116,6 +116,8 @@ class HomeController extends Controller
 
         $user=auth()->user();
 
+        $cart=cart::where('phone',$user->phone);
+
         $count=cart::where('phone',$user->phone)->count();
 
         return view('user.showcart',compact('count'));
