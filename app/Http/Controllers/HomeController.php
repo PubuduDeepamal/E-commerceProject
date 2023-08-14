@@ -129,6 +129,6 @@ class HomeController extends Controller
 
         $data->delete();
 
-        return redirect()->back();
+        return redirect()->back()->with('message','Product Remove Successfully');
     }
 }
