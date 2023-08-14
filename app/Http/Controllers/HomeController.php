@@ -99,7 +99,7 @@ class HomeController extends Controller
 
             $cart->quantity=$request->quantity;
 
-            $cart->save(); 
+            $cart->save();
 
             return redirect() ->back()->with('message','Product Added Successfully');
         }
@@ -109,5 +109,15 @@ class HomeController extends Controller
             return redirect('login');
         }
 
+    }
+
+    public function showcart()
+    {
+
+        $user=auth()->user();
+
+        $count=cart::where('phone',$user->phone)->count();
+
+        return view('user.showcart',compact('count'));
     }
 }
