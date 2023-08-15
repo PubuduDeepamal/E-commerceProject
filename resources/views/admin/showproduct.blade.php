@@ -47,7 +47,7 @@
             <h1 class="title">Product Inventory</h1>
 
 
-            <table id="fonttable">
+            <table id="fonttable"  class="table table-striped table-bordered" style="text-align: center;">
 
                 <tr style="background-color:gray">
 
