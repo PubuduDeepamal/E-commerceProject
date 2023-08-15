@@ -26,19 +26,19 @@
 
                 @foreach ($order as $orders )
 
-                @endforeach
+
 
                 <tr>
                     <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
                     <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->phone }}</th>
                     <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->address }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->product_name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->price }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->quantity }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->status }}</th>
                 </tr>
 
-
+                @endforeach
 
 
         </table>
