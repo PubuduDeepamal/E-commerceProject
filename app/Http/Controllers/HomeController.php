@@ -179,7 +179,13 @@ class HomeController extends Controller
 
             if(Auth::id())
             {
-                return redirect('redirect');
+                $user=auth()->user();
+                
+                $count=cart::where('phone',$user->phone)->count();
+
+                $data = Product::paginate(6);
+
+                return view('user.Homeproduct',compact('data','count'));
             }
             else
             {
@@ -188,6 +194,7 @@ class HomeController extends Controller
 
                 return view('user.Homeproduct',compact('data'));
             }
+
 
         }
 }
