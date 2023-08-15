@@ -50,6 +50,7 @@
 
       @include('user.heder')
       @include('user.aboutbanner')
+      @include('user.productselection')
       @include('user.product')
       @include('user.footer')
       @include('user.script')
