@@ -49,15 +49,15 @@
 
             <table id="fonttable"  class="table table-striped table-bordered" style="text-align: center;">
 
-                <tr style="background-color:gray">
+                <tr>
 
-                    <td style="padding: 20px">Title </td>
-                    <td style="padding: 20px">Description </td>
-                    <td style="padding: 20px">Quntity </td>
-                    <td style="padding: 20px">Price </td>
-                    <td style="padding: 20px">Image </td>
-                    <td style="padding: 20px">Update </td>
-                    <td style="padding: 20px">Delete </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Title </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Description </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Quntity </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Price </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Image </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Update </td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">Delete </td>
 
                 </tr>
 
@@ -67,7 +67,7 @@
 
                 <tr align="center" style="background-color:black;">
 
-                    <td>{{ $product->title }}</td>
+                    <td >{{ $product->title }}</td>
                     <td>{{ $product->description }}</td>
                     <td>{{ $product->quantity }}</td>
                     <td>{{ $product->price }}</td>
