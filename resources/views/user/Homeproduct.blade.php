@@ -49,7 +49,7 @@
     </div>
 
       @include('user.heder')
-      @include('user.banner')
+      @include('user.aboutbanner')
       @include('user.product')
       @include('user.footer')
       @include('user.script')
