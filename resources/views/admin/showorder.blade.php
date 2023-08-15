@@ -32,13 +32,13 @@
 
 
                 <tr>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->phone }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->address }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->product_name }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->price }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->quantity }}</th>
-                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->status }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->phone }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->address }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->product_name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->price }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->quantity }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $orders->status }}</th>
                     <th>
                         <a class="btn btn-success" href="{{ url('updatestatus', $orders->id) }}">
                                 Delivered
