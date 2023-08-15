@@ -45,3 +45,5 @@ route::post('/order',[HomeController::class,'confirmorder']);
 route::get('/showorder',[adminController::class,'showorder']);
 
 route::get('/updatestatus/{id}',[adminController::class,'updatestatus']);
+
+route::get('/Homeproduct',[HomeController::class,'Homeproduct']);
