@@ -7,7 +7,7 @@
 
         .title{
           padding-bottom: 40px;
-          color: white; 
+          color: white;
           padding-top: 25px;
           font-size:25px;
           padding-top: 80px;
@@ -22,7 +22,7 @@
 
       </style>
   </head>
-  <body>  
+  <body>
       @include('admin.sidebar')
       @include('admin.navbar')
 
@@ -35,13 +35,13 @@
             @if(session()->has('message'))
 
             <div class="alert alert-success">
-    
+
               {{session()->get('message')}}
-    
+
             <button type="button" class="close" data-dismiss="alert"> X </button>
-    
+
             </div>
-    
+
             @endif
 
             <h1 class="title">Product Inventory</h1>
@@ -62,8 +62,8 @@
                 </tr>
 
                 @foreach ($data as $product)
-                    
-                
+
+
 
                 <tr align="center" style="background-color:black;">
 
@@ -78,7 +78,7 @@
                         <a class="btn btn-primary" href="{{ url('updateview',$product->id) }}">Update</a>
                     </td>
                     <td>
-                        <a class="btn btn-danger" href="{{ url('deleteproduct',$product->id) }}">Delete</a>
+                        <a class="btn btn-danger" onclick="return confirm('Are you sure ?')" href="{{ url('deleteproduct',$product->id) }}">Delete</a>
                     </td>
 
                 </tr>
@@ -90,7 +90,7 @@
         </div>
 
       </div>
-   
-      @include('admin.script')    
+
+      @include('admin.script')
   </body>
 </html>
