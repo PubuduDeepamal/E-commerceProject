@@ -24,6 +24,20 @@
                     <th style="font-family: 'Times New Roman', Times, serif;">Status</th>
                 </tr>
 
+                @foreach ($order as $orders )
+
+                @endforeach
+
+                <tr>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->phone }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->address }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
+                    <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->name }}</th>
+                </tr>
+
 
 
 
