@@ -67,17 +67,17 @@
 
                 <tr align="center" style="background-color:black;">
 
-                    <td >{{ $product->title }}</td>
-                    <td>{{ $product->description }}</td>
-                    <td>{{ $product->quantity }}</td>
-                    <td>{{ $product->price }}</td>
-                    <td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $product->title }}</td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $product->description }}</td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $product->quantity }}</td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">{{ $product->price }}</td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">
                         <img height="100px" width="100px" src="/productimage/{{ $product->image }}">
                     </td>
-                    <td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">
                         <a class="btn btn-primary" href="{{ url('updateview',$product->id) }}">Update</a>
                     </td>
-                    <td>
+                    <td style="font-family: 'Times New Roman', Times, serif; color:#596993;">
                         <a class="btn btn-danger" onclick="return confirm('Are you sure ?')" href="{{ url('deleteproduct',$product->id) }}">Delete</a>
                     </td>
 
