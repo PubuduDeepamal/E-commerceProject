@@ -1,4 +1,4 @@
-<div class="products">
+<div class="products" id="prducttype">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
