@@ -34,7 +34,7 @@
       }
 
        .latest-products {
-            margin-top: -61px;
+            margin-top: -31px;
             background-color: #f2f3f8;
         }
 
