@@ -18,7 +18,7 @@
   }
 
 @media (max-width: 767px) {
- 
+
   #fonyfamily1{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -26,7 +26,7 @@
 }
 </style>
 
-<div class="latest-products">
+<div class="latest-products" id="latest-products">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -68,9 +68,9 @@
                 <br>
 
                 <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
-              
+
               </form>
-              
+
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
         @endforeach
 
         @if (method_exists($data, 'links'))
-          
+
 
       <div class="d-flex justify-content-center" id="fonyfamily">
 
