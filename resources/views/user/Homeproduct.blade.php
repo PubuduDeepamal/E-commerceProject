@@ -37,6 +37,10 @@
             margin-top: -61px;
             background-color: #f2f3f8;
         }
+
+        #prducttype{
+            margin-top: 30px;
+        }
     }
 
     </style>
