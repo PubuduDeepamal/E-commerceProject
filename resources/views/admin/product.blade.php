@@ -7,7 +7,7 @@
 
         .title{
           padding-bottom: 40px;
-          color: white; 
+          color: white;
           padding-top: 80px;
           font-size:48px;
           font-family: 'Times New Roman', Times, serif;
@@ -21,7 +21,7 @@
         }
 
         input {
-          color: black; 
+          color: black;
           font-family: 'Times New Roman', Times, serif;
         }
 
@@ -39,16 +39,12 @@
 
       </style>
   </head>
-  <body>  
+  <body>
       @include('admin.sidebar')
       @include('admin.navbar')
       <div class="container-fluid page-body-wrapper">
         <div class="container" align="center">
           <h1 class="title">Add Product</h1>
-        
-
-
-          
 
         @if(session()->has('message'))
 
@@ -61,40 +57,37 @@
         </div>
 
         @endif
-
-
-
-
+        
         <form action="{{ url('uploadproduct') }}" method="post" enctype="multipart/form-data" >
 
           @csrf
 
         <div style="padding: 15px">
           <label>Product Tittle</label>
-          <input style="color:black;" type="text" name="title" placeholder="Enter product title" required=""> 
+          <input style="color:black;" type="text" name="title" placeholder="Enter product title" required="">
         </div>
 
         <div style="padding: 15px">
           <label>Product Price</label>
-          <input style="color:black;" type="number" name="price" placeholder="Enter product Price" required=""> 
+          <input style="color:black;" type="number" name="price" placeholder="Enter product Price" required="">
         </div>
 
         <div style="padding: 15px">
           <label>Desripition</label>
-          <input style="color:black;" type="text" name="des" placeholder="Enter product Desripition" required=""> 
+          <input style="color:black;" type="text" name="des" placeholder="Enter product Desripition" required="">
         </div>
 
         <div style="padding: 15px">
           <label>Quantity</label>
-          <input style="color:black;" type="number" name="quantity" placeholder="Enter product Quantity" required=""> 
+          <input style="color:black;" type="number" name="quantity" placeholder="Enter product Quantity" required="">
         </div>
 
         <div style="padding: 15px" id="imginput">
-          <input type="file" name="file"> 
+          <input type="file" name="file">
         </div>
 
         <div style="padding: 15px" id="subbutton">
-          <input class="btn btn-success" type="submit"> 
+          <input class="btn btn-success" type="submit">
         </div>
 
       </form>
@@ -104,6 +97,6 @@
       </div>
       </div>
 
-      @include('admin.script')    
+      @include('admin.script')
   </body>
 </html>
