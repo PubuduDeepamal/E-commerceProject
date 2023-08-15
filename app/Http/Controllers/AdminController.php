@@ -17,7 +17,15 @@ class AdminController extends Controller
 
         if(Auth::id())
         {
-            return view('admin.product');
+            if(Auth::user()->usertype=='1')
+            {
+                return view('admin.product');
+            }
+
+            else{
+                return redirect()->back();
+            }
+
         }
 
         else{
