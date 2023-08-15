@@ -174,4 +174,10 @@ class HomeController extends Controller
             return redirect()->back()->with('message','Product Ordered Successfully');
         }
 
+        public function Homeproduct()
+        {
+            $data = Product::paginate(3);
+            
+            return view('user.Homeproduct',compact('data'));
+        }
 }
