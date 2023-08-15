@@ -176,8 +176,18 @@ class HomeController extends Controller
 
         public function Homeproduct()
         {
-            $data = Product::paginate(6);
 
-            return view('user.Homeproduct',compact('data'));
+            if(Auth::id())
+            {
+                return redirect('redirect');
+            }
+            else
+            {
+
+                $data = Product::paginate(6);
+
+                return view('user.Homeproduct',compact('data'));
+            }
+
         }
 }
