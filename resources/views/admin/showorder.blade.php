@@ -38,7 +38,7 @@
                     <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->quantity }}</th>
                     <th style="font-family: 'Times New Roman', Times, serif;">{{ $orders->status }}</th>
                     <th>
-                        <a class="btn btn-success" href="">
+                        <a class="btn btn-success" href="{{ url('updatestatus', $orders->id) }}">
                                 Delivered
                         </a>
                     </th>
