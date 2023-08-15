@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Product;
 
+use App\Models\Order;
+
 class AdminController extends Controller
 {
     public function product()
@@ -100,6 +102,9 @@ class AdminController extends Controller
 
    public function showorder()
    {
-        return view('admin.showorder');
+
+        $order=order::all();
+
+        return view('admin.showorder',compact('order'));
    }
 }
