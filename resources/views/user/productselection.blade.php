@@ -5,9 +5,9 @@
           <div class="filters">
             <ul>
                 <li class="active" data-filter="*">All Products</li>
-                <li data-filter=".des">Featured</li>
-                <li data-filter=".dev">Flash Deals</li>
-                <li data-filter=".gra">Last Minute</li>
+                <li data-filter=".des">Dog Products</li>
+                <li data-filter=".dev">Cat Products</li>
+                <li data-filter=".gra">Birds Products</li>
             </ul>
           </div>
         </div>
