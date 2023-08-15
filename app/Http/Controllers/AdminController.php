@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\Auth;
+
 use App\Models\Product;
 
 use App\Models\Order;
@@ -12,7 +14,12 @@ class AdminController extends Controller
 {
     public function product()
    {
-        return view('admin.product');
+
+        if(Auth::id())
+        {
+            return view('admin.product');
+        }
+
    }
 
    public function uploadproduct(Request $request)
