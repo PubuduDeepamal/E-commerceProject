@@ -176,8 +176,8 @@ class HomeController extends Controller
 
         public function Homeproduct()
         {
-            $data = Product::paginate(3);
-            
+            $data = Product::paginate(6);
+
             return view('user.Homeproduct',compact('data'));
         }
 }
