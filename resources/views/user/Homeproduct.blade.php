@@ -32,6 +32,11 @@
           margin-top: -12px;
           align-items: center;
       }
+
+       .latest-products {
+            margin-top: -61px;
+            background-color: #f2f3f8;
+        }
     }
 
     </style>
