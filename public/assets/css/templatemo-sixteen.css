@@ -287,7 +287,7 @@ header .navbar {
 }
 .navbar .navbar-toggler {
 	border-color: #fff;
-	background-color: #fff;	
+	background-color: #fff;
 	height: 36px;
 	outline: none;
 	border-radius: 0px;
@@ -403,6 +403,7 @@ header .navbar {
 	margin-top: 100px;
 	background-color: #f2f3f8;
 }
+
 
 .latest-products .section-heading a {
 	float: right;
