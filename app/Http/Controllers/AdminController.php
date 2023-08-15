@@ -20,6 +20,10 @@ class AdminController extends Controller
             return view('admin.product');
         }
 
+        else{
+            return redirect('login');
+        }
+
    }
 
    public function uploadproduct(Request $request)
