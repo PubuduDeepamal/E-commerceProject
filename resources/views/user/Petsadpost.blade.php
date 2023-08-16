@@ -31,8 +31,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="section-heading" id="section-heading">
-                <h2  style="font-family: 'Times New Roman', Times, serif;">Favorite Products</h2>
-                <a href="products.html" id="fonyfamily1">view all products <i class="fa fa-angle-right"></i></a>
+                <h2  style="font-family: 'Times New Roman', Times, serif;">Rescue Dog Center</h2>
 
                 <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
 
