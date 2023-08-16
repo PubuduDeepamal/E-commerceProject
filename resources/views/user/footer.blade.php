@@ -42,7 +42,7 @@
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
           <!-- Content -->
           <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3 text-secondary" id="fonyfamily"></i>JACK PETS
+                JACK PETS
           </h6>
           <p id="footerfontsize">
             Welcome to our pet shop, where you'll find an incredible selection of furry friends, high-quality products, and everything you need to make your pet's tail wag with joy!
@@ -98,7 +98,7 @@
           <h6 class="text-uppercase fw-bold mb-4" id="fonyfamily">Contact</h6>
           <p id="fonyfamily"> 258/1/4 Ds Senanayake Veediya, Kandy</p>
           <p id="fonyfamily">
-           
+
             jackpets@gmail.com
           </p>
           <p id="fonyfamily"> +94 076 678 6788</p>
@@ -113,7 +113,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);" id="fonyfamily">
-    © 2021 Copyright & Desing by 
+    © 2021 Copyright & Desing by
     <a class="text-reset fw-bold"> Pubudu Deepamal</a>
   </div>
   <!-- Copyright -->
