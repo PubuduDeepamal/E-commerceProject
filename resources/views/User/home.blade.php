@@ -53,6 +53,7 @@
       @include('user.homeabout')
       @include('user.product')
       @include('user.voucher')
+      @include('user.Petsadpost')
       @include('user.banner2')
       @include('user.footer')
       @include('user.script')
