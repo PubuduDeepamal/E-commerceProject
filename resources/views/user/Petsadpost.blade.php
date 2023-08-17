@@ -63,7 +63,31 @@
               </div>
             </div>
 
-            
+            <div class="col-md-4">
+                <div class="product-item">
+                  <a href="#"><img height="300" width="150" src="https://i.ikman-st.com/rottweiler-puppies-for-sale-for-sale-colombo-530/6e6511de-7113-4c38-9b89-017c1e4a6e0c/620/466/fitted.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="#"><h4 id="fonyfamily">Rottweiler Puppies</h4></a>
+                    <h6 id="fonyfamily">Rs 65,000</h6>
+                    <p id="fonyfamily">2 𝐌𝐚𝐥𝐞s 𝐀𝐫𝐞 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ...𝐉𝐮𝐬𝐭 40 days 𝐎𝐥𝐝 𝐁𝐚𝐛𝐢𝐞𝐬</p>
+                    <button class="btn btn-success" style="margin-left: 100px; font-family: 'Times New Roman', Times, serif;">Request</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="product-item">
+                  <a href="#"><img height="300" width="150" src="https://i.ikman-st.com/germon-shepard-puppies-for-sale-galle-1/9d75616c-660a-4612-8f2c-84dc7115eafd/780/585/fitted.jpg" alt=""></a>
+                  <div class="down-content">
+                    <a href="#"><h4 id="fonyfamily">German Shepherd Puppies</h4></a>
+                    <h6 id="fonyfamily">Rs 26,000</h6>
+                    <p id="fonyfamily">2 𝐌𝐚𝐥𝐞s 𝐀𝐫𝐞 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ...𝐉𝐮𝐬𝐭 40 days 𝐎𝐥𝐝 𝐁𝐚𝐛𝐢𝐞𝐬</p>
+                    <button class="btn btn-success" style="margin-left: 100px; font-family: 'Times New Roman', Times, serif;">Request</button>
+                  </div>
+                </div>
+              </div>
+
+
 
           </div>
         </div>
