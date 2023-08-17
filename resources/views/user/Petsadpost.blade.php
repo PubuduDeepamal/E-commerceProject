@@ -52,27 +52,15 @@
 
             <div class="col-md-4">
               <div class="product-item">
-                <a href="#"><img height="300" width="150" src="/productimage/{{$product->image}}" alt=""></a>
+                <a href="#"><img height="300" width="150" src="https://i.ikman-st.com/germon-shepard-puppies-for-sale-galle-1/9d75616c-660a-4612-8f2c-84dc7115eafd/780/585/fitted.jpg" alt=""></a>
                 <div class="down-content">
-                  <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
-                  <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
-                  <p id="fonyfamily">{{ $product->description }}</p>
-
-                  <form action="{{ url('addcart',$product->id) }}" method="POST">
-
-                    @csrf
-
-                    <input type="number" value="1" min="1" class="form-control" style="width: 100px" name="quantity">
-
-                    <br>
-
-                    <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
-
-                  </form>
-
+                  <a href="#"><h4 id="fonyfamily">German Shepherd Puppies</h4></a>
+                  <h6 id="fonyfamily">Rs 26,000</h6>
+                  <p id="fonyfamily">2 𝐌𝐚𝐥𝐞s 𝐀𝐫𝐞 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ...𝐉𝐮𝐬𝐭 40 days 𝐎𝐥𝐝 𝐁𝐚𝐛𝐢𝐞𝐬</p>
                 </div>
               </div>
             </div>
+
 
             @endforeach
 
