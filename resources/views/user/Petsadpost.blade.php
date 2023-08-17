@@ -48,6 +48,7 @@
             </div>
 
 
+
             @foreach ($data as $product)
 
             <div class="col-md-4">
@@ -57,7 +58,7 @@
                   <a href="#"><h4 id="fonyfamily">German Shepherd Puppies</h4></a>
                   <h6 id="fonyfamily">Rs 26,000</h6>
                   <p id="fonyfamily">2 𝐌𝐚𝐥𝐞s 𝐀𝐫𝐞 𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 ...𝐉𝐮𝐬𝐭 40 days 𝐎𝐥𝐝 𝐁𝐚𝐛𝐢𝐞𝐬</p>
-                  <button>Request</button>
+                  <button class="btn btn-success" style="margin-left: 8px; font-family: 'Times New Roman', Times, serif;">Request</button>
                 </div>
               </div>
             </div>
