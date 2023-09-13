@@ -19,7 +19,6 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Advice</th>
                     <th>Description</th>
                 </tr>
@@ -51,7 +50,7 @@
 
                     data.forEach(function (item) {
                         var row = document.createElement("tr");
-                        row.innerHTML = "<td>" + item.id + "</td><td>" + item.Advice + "</td><td>" + item.Description + "</td>";
+                        row.innerHTML = "<td>" + item.Advice + "</td><td>" + item.Description + "</td>";
                         tableBody.appendChild(row);
                     });
                 })
