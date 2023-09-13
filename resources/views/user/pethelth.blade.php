@@ -9,8 +9,10 @@
 <body>
 
     <div class="container mt-4">
-        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="section-heading">
             <h2 id="producttittle">Pet Care Advice</h2>
+        </div>
         </div>
 
         <!-- Create an empty table with a header row -->
