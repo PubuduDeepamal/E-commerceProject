@@ -37,7 +37,7 @@
     <script>
         // Function to fetch and populate the table with JSON data
         function populateTable() {
-            fetch('/user/petAdvice.json') // Fetch the JSON file
+            fetch('user.petAdvice') // Fetch the JSON file
                 .then(response => response.json()) // Parse JSON data
                 .then(data => {
                     var tableBody = document.getElementById("petAdviceTable");
