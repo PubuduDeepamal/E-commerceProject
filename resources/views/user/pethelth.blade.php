@@ -11,22 +11,14 @@
     <div class="container mt-4">
         <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="section-heading">
-            <h2 id="producttittle">Pet Care Advice</h2>
-        </div>
+                <h2 id="producttittle">Pet Care Advice</h2>
+            </div>
         </div>
 
-        <!-- Create an empty table with a header row -->
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Advice</th>
-                    <th>Description</th>
-                </tr>
-            </thead>
-            <tbody id="petAdviceTable">
-                <!-- Data will be populated here -->
-            </tbody>
-        </table>
+        <!-- Create an empty accordion for Q&A -->
+        <div id="petAdviceAccordion">
+            <!-- Data will be populated here -->
+        </div>
 
     </div>
 
@@ -36,8 +28,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
-        // Function to fetch and populate the table with JSON data
-        function populateTable() {
+        // Function to fetch and populate the Q&A Accordion with JSON data
+        function populateAccordion() {
             fetch('assets/css/petAdvice.json') // Fetch data from petAdvice.json
                 .then(response => {
                     if (!response.ok) {
@@ -46,21 +38,50 @@
                     return response.json();
                 })
                 .then(data => {
-                    var tableBody = document.getElementById("petAdviceTable");
+                    var accordion = document.getElementById("petAdviceAccordion");
 
                     data.forEach(function (item) {
-                        var row = document.createElement("tr");
-                        row.innerHTML = "<td>" + item.Advice + "</td><td>" + item.Description + "</td>";
-                        tableBody.appendChild(row);
+                        // Create an accordion item for each Q&A pair
+                        var accordionItem = document.createElement("div");
+                        accordionItem.className = "card";
+
+                        var cardHeader = document.createElement("div");
+                        cardHeader.className = "card-header";
+
+                        var questionButton = document.createElement("button");
+                        questionButton.className = "btn btn-link";
+                        questionButton.setAttribute("data-toggle", "collapse");
+                        questionButton.setAttribute("data-target", "#answer");
+                        questionButton.setAttribute("aria-expanded", "true");
+                        questionButton.setAttribute("aria-controls", "answer");
+                        questionButton.innerHTML = item.Advice;
+
+                        cardHeader.appendChild(questionButton);
+
+                        var answerDiv = document.createElement("div");
+                        answerDiv.id = "answer";
+                        answerDiv.className = "collapse";
+                        answerDiv.setAttribute("aria-labelledby", "question");
+                        answerDiv.setAttribute("data-parent", "#petAdviceAccordion");
+
+                        var answerCardBody = document.createElement("div");
+                        answerCardBody.className = "card-body";
+                        answerCardBody.innerHTML = item.Description;
+
+                        answerDiv.appendChild(answerCardBody);
+
+                        accordionItem.appendChild(cardHeader);
+                        accordionItem.appendChild(answerDiv);
+
+                        accordion.appendChild(accordionItem);
                     });
                 })
                 .catch(error => console.error('Error fetching or parsing data:', error));
         }
 
-        // Call the function to populate the table
-        populateTable();
+        // Call the function to populate the Q&A Accordion
+        populateAccordion();
     </script>
-
 
 </body>
 
