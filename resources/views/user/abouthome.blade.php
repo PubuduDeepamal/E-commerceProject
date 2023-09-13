@@ -58,9 +58,7 @@
     </div>
 
       @include('user.heder')
-      @include('user.productbanner')
-      @include('user.productselection')
-      @include('user.fproduct')
+      
       @include('user.footer')
       @include('user.script')
 
