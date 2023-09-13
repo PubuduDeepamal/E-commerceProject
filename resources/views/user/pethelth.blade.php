@@ -36,23 +36,29 @@
 
     <script>
         // Function to fetch and populate the table with JSON data
-        function populateTable() {
-            fetch('user.petAdvice') // Fetch the JSON file
-                .then(response => response.json()) // Parse JSON data
-                .then(data => {
-                    var tableBody = document.getElementById("petAdviceTable");
+function populateTable() {
+    fetch('petAdvice')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            var tableBody = document.getElementById("petAdviceTable");
 
-                    data.forEach(function (item) {
-                        var row = document.createElement("tr");
-                        row.innerHTML = "<td>" + item.id + "</td><td>" + item.Advice + "</td><td>" + item.Description + "</td>";
-                        tableBody.appendChild(row);
-                    });
-                })
-                .catch(error => console.error('Error fetching data:', error));
-        }
+            data.forEach(function (item) {
+                var row = document.createElement("tr");
+                row.innerHTML = "<td>" + item.id + "</td><td>" + item.Advice + "</td><td>" + item.Description + "</td>";
+                tableBody.appendChild(row);
+            });
+        })
+        .catch(error => console.error('Error fetching or parsing data:', error));
+}
 
-        // Call the function to populate the table
-        populateTable();
+// Call the function to populate the table
+populateTable();
+
     </script>
 
 </body>
