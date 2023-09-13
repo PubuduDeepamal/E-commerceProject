@@ -4,19 +4,72 @@
 <head>
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles for the accordion */
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .pet-care-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .pet-care-header {
+            margin-bottom: 30px;
+        }
+
+        .pet-care-card {
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .pet-care-card-header {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .pet-care-card-header:hover {
+            background-color: #0056b3;
+        }
+
+        .pet-care-btn-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .pet-care-btn-link:hover {
+            text-decoration: underline;
+        }
+
+        .pet-care-collapse.show {
+            background-color: #fff;
+        }
+
+        .pet-care-card-body {
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container mt-4">
-        <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="pet-care-container mt-4">
+        <div class="pet-care-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="section-heading">
                 <h2 id="producttittle">Pet Care Advice</h2>
             </div>
         </div>
 
         <!-- Create an empty accordion for Q&A -->
-        <div id="petAdviceAccordion">
+        <div id="petCareAccordion">
             <!-- Data will be populated here -->
         </div>
 
@@ -38,34 +91,34 @@
                     return response.json();
                 })
                 .then(data => {
-                    var accordion = document.getElementById("petAdviceAccordion");
+                    var accordion = document.getElementById("petCareAccordion");
 
-                    data.forEach(function (item) {
+                    data.forEach(function (item, index) {
                         // Create an accordion item for each Q&A pair
                         var accordionItem = document.createElement("div");
-                        accordionItem.className = "card";
+                        accordionItem.className = "pet-care-card";
 
                         var cardHeader = document.createElement("div");
-                        cardHeader.className = "card-header";
+                        cardHeader.className = "pet-care-card-header";
 
                         var questionButton = document.createElement("button");
-                        questionButton.className = "btn btn-link";
+                        questionButton.className = "btn pet-care-btn-link";
                         questionButton.setAttribute("data-toggle", "collapse");
-                        questionButton.setAttribute("data-target", "#answer");
-                        questionButton.setAttribute("aria-expanded", "true");
-                        questionButton.setAttribute("aria-controls", "answer");
+                        questionButton.setAttribute("data-target", `#answer-${index}`);
+                        questionButton.setAttribute("aria-expanded", "false");
+                        questionButton.setAttribute("aria-controls", `answer-${index}`);
                         questionButton.innerHTML = item.Advice;
 
                         cardHeader.appendChild(questionButton);
 
                         var answerDiv = document.createElement("div");
-                        answerDiv.id = "answer";
-                        answerDiv.className = "collapse";
-                        answerDiv.setAttribute("aria-labelledby", "question");
-                        answerDiv.setAttribute("data-parent", "#petAdviceAccordion");
+                        answerDiv.id = `answer-${index}`;
+                        answerDiv.className = "collapse pet-care-collapse";
+                        answerDiv.setAttribute("aria-labelledby", `question-${index}`);
+                        answerDiv.setAttribute("data-parent", "#petCareAccordion");
 
                         var answerCardBody = document.createElement("div");
-                        answerCardBody.className = "card-body";
+                        answerCardBody.className = "card-body pet-care-card-body";
                         answerCardBody.innerHTML = item.Description;
 
                         answerDiv.appendChild(answerCardBody);
