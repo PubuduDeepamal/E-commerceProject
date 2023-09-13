@@ -16,6 +16,7 @@ use App\Models\Cart;
 
 use App\Models\Order;
 
+use GuzzleHttp\Client;
 
 
 class HomeController extends Controller
@@ -199,26 +200,34 @@ class HomeController extends Controller
         }
 
         public function abouthome()
-        {
+{
+    // Initialize data to be sent to the view
+    $viewData = [];
 
-            if(Auth::id())
-            {
-                $user=auth()->user();
+    // Check if user is authenticated
+    if (Auth::id()) {
+        $user = auth()->user();
+        $viewData['count'] = cart::where('phone', $user->phone)->count();
+    }
 
-                $count=cart::where('phone',$user->phone)->count();
+    // Fetch the external API data
+    $client = new Client();
+    $response = $client->get('https://reqres.in/api/users?page=1');
+    $users = json_decode($response->getBody())->data;
 
-                $data = Product::paginate(6);
+    // Paginate the results manually
+    $perPage = 6; // items per page
+    $currentPage = request()->get('page', 1); // Get current page from request, default is 1
+    $slicedCollection = array_slice($users, ($currentPage - 1) * $perPage, $perPage);
+    $viewData['data'] = new \Illuminate\Pagination\LengthAwarePaginator(
+        $slicedCollection,
+        count($users),
+        $perPage,
+        $currentPage,
+        ['path' => \Illuminate\Pagination\Paginator::resolveCurrentPath()]
+    );
 
-                return view('user.abouthome',compact('data','count'));
-            }
-            else
-            {
+    return view('user.abouthome', $viewData);
+}
 
-                $data = Product::paginate(6);
-
-                return view('user.abouthome',compact('data'));
-            }
-
-
-        }
 }
