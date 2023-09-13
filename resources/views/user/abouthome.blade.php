@@ -58,6 +58,7 @@
     </div>
 
       @include('user.heder')
+      @include('user.homeabout')
       @include('user.about')
       @include('user.footer')
       @include('user.script')
