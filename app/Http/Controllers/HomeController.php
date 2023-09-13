@@ -180,7 +180,7 @@ class HomeController extends Controller
             if(Auth::id())
             {
                 $user=auth()->user();
-                
+
                 $count=cart::where('phone',$user->phone)->count();
 
                 $data = Product::paginate(6);
@@ -193,6 +193,30 @@ class HomeController extends Controller
                 $data = Product::paginate(6);
 
                 return view('user.Homeproduct',compact('data'));
+            }
+
+
+        }
+
+        public function abouthome()
+        {
+
+            if(Auth::id())
+            {
+                $user=auth()->user();
+
+                $count=cart::where('phone',$user->phone)->count();
+
+                $data = Product::paginate(6);
+
+                return view('user.abouthome',compact('data','count'));
+            }
+            else
+            {
+
+                $data = Product::paginate(6);
+
+                return view('user.abouthome',compact('data'));
             }
 
 
