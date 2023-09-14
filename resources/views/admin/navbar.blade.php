@@ -16,7 +16,7 @@
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown d-none d-lg-block">
+          {{-- <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link btn btn-success create-new-button" id="createbuttonDropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#">+ Create New Project</a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="createbuttonDropdown">
               <h6 class="p-3 mb-0">Projects</h6>
@@ -56,7 +56,7 @@
               <div class="dropdown-divider"></div>
               <p class="p-3 mb-0 text-center">See all projects</p>
             </div>
-          </li>
+          </li> --}}
           <li class="nav-item nav-settings d-none d-lg-block">
             <a class="nav-link" href="#">
               <i class="mdi mdi-view-grid"></i>
