@@ -214,6 +214,7 @@ class HomeController extends Controller
             $client = new Client();
             $response = $client->get('https://reqres.in/api/users?page=1');
             $users = json_decode($response->getBody())->data;
+            // return $users;
 
             // Paginate the results manually
             $perPage = 6; // items per page
