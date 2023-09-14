@@ -7,9 +7,6 @@
     <!-- Custom CSS -->
     <style>
         /* Custom styles for the accordion */
-        body {
-            background-color: #f5f5f5;
-        }
 
         .pet-care-container {
             background-color: #fff;
@@ -30,13 +27,13 @@
         }
 
         .pet-care-card-header {
-            background-color: #007bff;
+            background-color: #28a745;
             color: #fff;
             cursor: pointer;
         }
 
         .pet-care-card-header:hover {
-            background-color: #0056b3;
+            background-color: #007bff;
         }
 
         .pet-care-btn-link {
