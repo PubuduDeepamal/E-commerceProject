@@ -51,13 +51,14 @@
       @include('user.heder')
       @include('user.banner')
       @include('user.homeabout')
-      @include('user.pethelth')
       @include('user.product')
       @include('user.voucher')
       @include('user.Petsadpost')
       @include('user.banner2')
+      @include('user.pethelth')
       @include('user.footer')
       @include('user.script')
+
 
   </body>
 
