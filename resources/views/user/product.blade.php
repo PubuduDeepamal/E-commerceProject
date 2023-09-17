@@ -107,6 +107,7 @@
                             <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
                             <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
                             <p id="fonyfamily">{{ $product->description }}</p>
+                            <p id="fonyfamily" style="color: red; text-align: center;">All Promoted Product section products have a 10% Discount</p>
                             <form action="{{ url('addcart',$product->id) }}" method="POST">
                                 @csrf
                                 <input type="number" value="1" min="1" class="form-control" style="width: 100px" name="quantity">
