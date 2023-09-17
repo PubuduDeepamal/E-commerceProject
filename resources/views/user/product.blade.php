@@ -133,7 +133,7 @@
         <div class="discount-content">
             <span class="close-btn" id="close-btn">&times;</span>
             <h2>Get 10% Off!</h2>
-            <p>All promoted product section products have a 10% discount.</p>
+            <p>All <b>Promoted Product</b> section products have a 10% discount.</p>
         </div>
     </div>
 
