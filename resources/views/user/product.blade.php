@@ -19,6 +19,7 @@
             color: #fff;
             background-color: #28a745;
             border-color: #28a745;
+            margin-left: 16px;
         }
 
         #fonyfamily1 {
