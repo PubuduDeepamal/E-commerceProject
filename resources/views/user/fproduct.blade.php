@@ -53,10 +53,6 @@
                         <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
                         <p id="fonyfamily">{{ $product->description }}</p>
 
-                        <!-- Add a download button for each image -->
-                        <a href="/productimage/{{$product->image}}" download="{{$product->title}}.jpg">
-                            <button class="btn btn-secondary">Download Image</button>
-                        </a>
 
                         <form action="{{ url('addcart',$product->id) }}" method="POST">
 
@@ -67,6 +63,10 @@
                             <br>
 
                             <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
+
+                            <a class="btn btn-primary" id="buttoncolor" href="/productimage/{{$product->image}}" download="{{$product->title}}.jpg">
+                                Download Image
+                            </a>
 
                         </form>
 
