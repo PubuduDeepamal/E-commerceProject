@@ -104,9 +104,7 @@
                     <div class="product-item">
                         <a href="#"><img height="300" width="150" src="/productimage/{{$product->image}}" alt=""></a>
                         <!-- Add a download link for each image -->
-                        <div>
-                            <a href="/productimage/{{$product->image}}" download="product_image.jpg">Download Image</a>
-                        </div>
+
                         <div class="down-content">
                             <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
                             <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
@@ -117,7 +115,9 @@
                                 <input type="number" value="1" min="1" class="form-control" style="width: 100%" name="quantity">
                                 <br>
                                 <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
+                                <a class="btn btn-primary" id="buttoncolor" href="/productimage/{{$product->image}}" download="product_image.jpg">Download Image</a>
                             </form>
+
                         </div>
                     </div>
                 </div>
