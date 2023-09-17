@@ -14,11 +14,12 @@
               </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="/abouthome">About Us</a>
+              </li>
+            <li class="nav-item">
               <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="/Homeproduct">Our Products</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;" href="/abouthome">About Us</a>
-            </li>
+
             {{-- <li class="nav-item">
               <a class="nav-link" style="font-family: 'Times New Roman', Times, serif;"  href="">Contact Us</a>
             </li> --}}
