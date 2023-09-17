@@ -1,93 +1,91 @@
-
 <style>
-
     .btn-success {
         color: #fff;
         background-color: #28a745;
         border-color: #28a745;
     }
 
-    #buttoncolor{
-      color: #fff;
+    #buttoncolor {
+        color: #fff;
         background-color: #28a745;
         border-color: #28a745;
     }
 
-    #fonyfamily1{
+    #fonyfamily1 {
         font-family: 'Times New Roman', Times, serif;
-      }
+    }
 
     @media (max-width: 767px) {
-
-      #fonyfamily1{
-        text-align: center;
-        font-family: 'Times New Roman', Times, serif;
-      }
+        #fonyfamily1 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
     }
-    </style>
+</style>
 
-    <div class="latest-products" id="latest-products">
-        <div class="container">
-          <div class="row">
+<div class="latest-products" id="latest-products">
+    <div class="container">
+        <div class="row">
             <div class="col-md-12">
-              <div class="section-heading" id="section-heading">
-                <h2  style="font-family: 'Times New Roman', Times, serif;">Latest Products</h2>
-                <a href="products.html" id="fonyfamily1">view all products <i class="fa fa-angle-right"></i></a>
+                <div class="section-heading" id="section-heading">
+                    <h2 style="font-family: 'Times New Roman', Times, serif;">Latest Products</h2>
+                    <a href="products.html" id="fonyfamily1">view all products <i class="fa fa-angle-right"></i></a>
 
-                <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
+                    <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
 
-                  @csrf
+                        @csrf
 
-                  <input class="form-control" style="font-family: 'Times New Roman', Times, serif;" type="search" name="search" placeholder="Search">
+                        <input class="form-control" style="font-family: 'Times New Roman', Times, serif;" type="search" name="search" placeholder="Search">
 
-                  <input class="btn btn-success" style="margin-left: 8px; font-family: 'Times New Roman', Times, serif;" type="submit" value="Search" placeholder="Search">
+                        <input class="btn btn-success" style="margin-left: 8px; font-family: 'Times New Roman', Times, serif;" type="submit" value="Search" placeholder="Search">
 
-                </form>
-
-
-              </div>
+                    </form>
+                </div>
             </div>
-
 
             @foreach ($data as $product)
 
             <div class="col-md-4">
-              <div class="product-item">
-                <a href="#"><img height="300" width="150" src="/productimage/{{$product->image}}" alt=""></a>
-                <div class="down-content">
-                  <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
-                  <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
-                  <p id="fonyfamily">{{ $product->description }}</p>
+                <div class="product-item">
+                    <a href="#"><img height="300" width="150" src="/productimage/{{$product->image}}" alt=""></a>
+                    <div class="down-content">
+                        <a href="#"><h4 id="fonyfamily">{{ $product->title }}</h4></a>
+                        <h6 id="fonyfamily">Rs {{ $product->price }}</h6>
+                        <p id="fonyfamily">{{ $product->description }}</p>
 
-                  <form action="{{ url('addcart',$product->id) }}" method="POST">
+                        <!-- Add a download button for each image -->
+                        <a href="/productimage/{{$product->image}}" download="{{$product->title}}.jpg">
+                            <button class="btn btn-secondary">Download Image</button>
+                        </a>
 
-                    @csrf
+                        <form action="{{ url('addcart',$product->id) }}" method="POST">
 
-                    <input type="number" value="1" min="1" class="form-control" style="width: 100px" name="quantity">
+                            @csrf
 
-                    <br>
+                            <input type="number" value="1" min="1" class="form-control" style="width: 100px" name="quantity">
 
-                    <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
+                            <br>
 
-                  </form>
+                            <input class="btn btn-primary" id="buttoncolor" type="submit" value="Add Cart">
 
+                        </form>
+
+                    </div>
                 </div>
-              </div>
             </div>
 
             @endforeach
 
             @if (method_exists($data, 'links'))
 
+            <div class="d-flex justify-content-center" id="fonyfamily">
 
-          <div class="d-flex justify-content-center" id="fonyfamily">
+                {!! $data->links() !!}
 
-            {!! $data->links() !!}
+            </div>
 
-          </div>
+            @endif
 
-          @endif
-
-          </div>
         </div>
-      </div>
+    </div>
+</div>
