@@ -62,7 +62,7 @@
     <div class="pet-care-container mt-4 text-center">
         <div class="pet-care-header mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="section-heading">
-                <h2 id="producttittle">Pet Care Advice</h2>
+                <h2 id="producttittle" style="margin-top: 20px">Pet Care Advice</h2>
             </div>
         </div>
 
@@ -133,6 +133,8 @@
         // Call the function to populate the Q&A Accordion
         populateAccordion();
     </script>
+
+    <br>
 
 </body>
 
