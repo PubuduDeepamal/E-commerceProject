@@ -94,7 +94,7 @@
 
                         <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
                             @csrf
-                            <input class="form-control" style="font-family: 'Times New Roman', Times, serif;" type="search" name="search" placeholder="Search">
+                            <input class="form-control" style="font-family: 'Times New Roman', Times, serif; width:65%" type="search" name="search" placeholder="Search">
                             <input class="btn btn-success" style="margin-left: 8px; font-family: 'Times New Roman', Times, serif;" type="submit" value="Search" placeholder="Search">
                         </form>
                     </div>
