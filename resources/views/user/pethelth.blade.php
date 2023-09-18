@@ -59,8 +59,8 @@
 
 <body>
 
-    <div class="pet-care-container mt-4">
-        <div class="pet-care-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="pet-care-container mt-4 text-center">
+        <div class="pet-care-header mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
             <div class="section-heading">
                 <h2 id="producttittle">Pet Care Advice</h2>
             </div>
