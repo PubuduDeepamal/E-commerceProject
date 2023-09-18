@@ -34,7 +34,7 @@
         }
 
         .pet-care-card-header:hover {
-            background-color: #007bff;
+            background-color: #28a745;
         }
 
         .pet-care-btn-link {
