@@ -61,7 +61,6 @@
       @include('user.aboutbanner')
       @include('user.homeabout')
       @include('user.about')
-      @include('user.map')
       @include('user.footer')
       @include('user.script')
 
