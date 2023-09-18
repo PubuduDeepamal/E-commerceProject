@@ -29,14 +29,14 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-heading" id="section-heading">
-                    <h2 style="font-family: 'Times New Roman', Times, serif;">Latest Products</h2>
+                    <h2 style="font-family: 'Times New Roman', Times, serif; ">Latest Products</h2>
                     <a href="products.html" id="fonyfamily1">view all products <i class="fa fa-angle-right"></i></a>
 
                     <form action="{{ url('search') }}" method="get" class="form-inline" style="float: right; padding: 10px;">
 
                         @csrf
 
-                        <input class="form-control" style="font-family: 'Times New Roman', Times, serif;" type="search" name="search" placeholder="Search">
+                        <input class="form-control" style="font-family: 'Times New Roman', Times, serif; width:65%" type="search" name="search" placeholder="Search">
 
                         <input class="btn btn-success" style="margin-left: 8px; font-family: 'Times New Roman', Times, serif;" type="submit" value="Search" placeholder="Search">
 
