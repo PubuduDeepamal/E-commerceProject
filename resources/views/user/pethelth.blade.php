@@ -13,6 +13,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: black;
         }
 
         .pet-care-header {
@@ -27,8 +28,8 @@
         }
 
         .pet-care-card-header {
-            background-color: #28a745;
-            color: #fff;
+            background-color: white;
+            color: black;
             cursor: pointer;
         }
 
@@ -37,7 +38,7 @@
         }
 
         .pet-care-btn-link {
-            color: #fff;
+            color: black;
             text-decoration: none;
             font-weight: bold;
         }
