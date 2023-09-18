@@ -53,7 +53,7 @@
 
             <div class="col-md-4">
               <div class="product-item">
-                <a href="#"><img height="300" width="150" src="https://i.ikman-st.com/germon-shepard-puppies-for-sale-galle-1/9d75616c-660a-4612-8f2c-84dc7115eafd/780/585/fitted.jpg" alt=""></a>
+                <a href="#"><img height="300" width="150" src="https://th.bing.com/th/id/R.be910db951bafca7bbf5cd2c84600731?rik=aauxFHegqo3a5w&riu=http%3a%2f%2fstatic3.businessinsider.com%2fimage%2f5484d9d1eab8ea3017b17e29%2f9-science-backed-reasons-to-own-a-dog.jpg&ehk=xgoJIFryMSERKzmXor2k3oOtE1fWtrgYC7i0yek0fQU%3d&risl=&pid=ImgRaw&r=0" alt=""></a>
                 <div class="down-content">
                   <a href="#"><h4 id="fonyfamily">German Shepherd Puppies</h4></a>
                   <h6 id="fonyfamily">Rs 26,000</h6>
@@ -63,10 +63,10 @@
               </div>
             </div>
 
-            
+
             <div class="col-md-4">
                 <div class="product-item">
-                  <a href="#"><img height="300" width="150" src="https://i.ikman-st.com/rottweiler-puppies-for-sale-for-sale-colombo-530/6e6511de-7113-4c38-9b89-017c1e4a6e0c/620/466/fitted.jpg" alt=""></a>
+                  <a href="#"><img height="300" width="150" src="https://live.staticflickr.com/6025/6192818087_813e6b98ed.jpg" alt=""></a>
                   <div class="down-content">
                     <a href="#"><h4 id="fonyfamily">Rottweiler Puppies</h4></a>
                     <h6 id="fonyfamily">Rs 65,000</h6>
@@ -78,7 +78,7 @@
 
               <div class="col-md-4">
                 <div class="product-item">
-                  <a href="#"><img height="300" width="150" src="https://i.ikman-st.com/rottweiler-puppies-for-sale-gampaha-3871/27e702b3-b532-4fdf-b2f2-87a0aa86cfed/620/466/fitted.jpg" alt=""></a>
+                  <a href="#"><img height="300" width="150" src="https://th.bing.com/th/id/OIP.aYf7-AitMR7Mr0EZVxOerwAAAA?pid=ImgDet&rs=1" alt=""></a>
                   <div class="down-content">
                     <a href="#"><h4 id="fonyfamily">Rottweiler Puppies</h4></a>
                     <h6 id="fonyfamily">Rs 90,000</h6>
