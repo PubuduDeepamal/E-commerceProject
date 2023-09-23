@@ -10,6 +10,10 @@ use App\Models\Product;
 
 use App\Models\Order;
 
+use GuzzleHttp\Client;
+
+use App\Models\Cart;
+
 class AdminController extends Controller
 {
     public function product()
@@ -137,5 +141,37 @@ class AdminController extends Controller
         $order->save();
 
         return redirect()->back();
+   }
+
+   public function showemploye()
+   {
+
+
+        $viewData = [];
+
+        // Check if user is authenticated
+        if (Auth::id()) {
+            $user = auth()->user();
+            $viewData['count'] = cart::where('phone', $user->phone)->count();
+    }
+
+        // Fetch the external API data
+        $client = new Client();
+        $response = $client->get('https://reqres.in/api/users?page=1');
+        $users = json_decode($response->getBody())->data;
+        // return $users;
+
+        $perPage = 6; // items per page
+        $currentPage = request()->get('page', 1); // Get current page from request, default is 1
+        $slicedCollection = array_slice($users, ($currentPage - 1) * $perPage, $perPage);
+        $viewData['data'] = new \Illuminate\Pagination\LengthAwarePaginator(
+            $slicedCollection,
+            count($users),
+            $perPage,
+            $currentPage,
+            ['path' => \Illuminate\Pagination\Paginator::resolveCurrentPath()]
+        );
+
+        return view('admin.showemploye', $viewData);
    }
 }
