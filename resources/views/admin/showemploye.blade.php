@@ -113,7 +113,6 @@
                     <th data-content="First Name">First Name</th>
                     <th data-content="Last Name">Last Name</th>
                     <th data-content="Email">Email</th>
-                    <th data-content="Avatar">Avatar</th>
                 </tr>
             </thead>
             <tbody>
@@ -123,7 +122,7 @@
                         <td>{{ $user->first_name }}</td>
                         <td>{{ $user->last_name }}</td>
                         <td>{{ $user->email }}</td>
-                        <td><img src="{{ $user->avatar }}" alt="{{ $user->first_name }}" class="img-fluid" style="width: 50px;"></td>
+
                     </tr>
                 @endforeach
             </tbody>
