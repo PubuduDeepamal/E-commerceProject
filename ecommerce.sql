@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 13, 2023 at 05:43 AM
+-- Generation Time: Sep 24, 2023 at 06:51 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -121,7 +121,17 @@ INSERT INTO `orders` (`id`, `name`, `phone`, `address`, `product_name`, `quantit
 (19, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '6', '800.00', 'not delivered', '2023-08-17 09:05:18', '2023-08-17 09:05:18'),
 (20, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '1', '800.00', 'not delivered', '2023-08-21 10:43:51', '2023-08-21 10:43:51'),
 (21, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '1', '800.00', 'not delivered', '2023-08-22 06:12:11', '2023-08-22 06:12:11'),
-(22, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Omega Stripes', '4', '2500.00', 'Delivered', '2023-08-23 17:10:48', '2023-08-23 17:11:25');
+(22, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Omega Stripes', '4', '2500.00', 'Delivered', '2023-08-23 17:10:48', '2023-08-23 17:11:25'),
+(23, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '1', '800.00', 'Delivered', '2023-09-12 22:20:30', '2023-09-14 02:00:13'),
+(24, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Omega Stripes', '1', '2500.00', 'not delivered', '2023-09-14 00:53:18', '2023-09-14 00:53:18'),
+(25, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '1', '800.00', 'not delivered', '2023-09-14 01:59:39', '2023-09-14 01:59:39'),
+(26, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '4', '800.00', 'not delivered', '2023-09-17 23:28:15', '2023-09-17 23:28:15'),
+(27, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Cat Crispy Pouches', '5', '850.00', 'not delivered', '2023-09-17 23:28:15', '2023-09-17 23:28:15'),
+(28, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chocolate Drops', '1', '800.00', 'not delivered', '2023-09-17 23:28:38', '2023-09-17 23:28:38'),
+(29, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Omega Stripes', '200', '2500.00', 'not delivered', '2023-09-23 18:09:39', '2023-09-23 18:09:39'),
+(30, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Omega Stripes', '1', '2500.00', 'not delivered', '2023-09-23 18:33:30', '2023-09-23 18:33:30'),
+(31, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Omega Stripes', '230', '2500.00', 'Delivered', '2023-09-23 23:10:23', '2023-09-23 23:12:58'),
+(32, 'pubudu Deepamal', '0765678765', 'pubududeepamal98@gmail.com', 'Chicken With Peas Broth And Gravy', '3', '450', 'not delivered', '2023-09-23 23:10:23', '2023-09-23 23:10:23');
 
 -- --------------------------------------------------------
 
@@ -179,7 +189,7 @@ INSERT INTO `products` (`id`, `title`, `price`, `description`, `quantity`, `imag
 (9, 'Omega Stripes', '2500.00', 'Dog food', '100', '1691746383.webp', '2023-08-11 04:03:04', '2023-08-12 03:38:48'),
 (10, 'Chocolate Drops', '800.00', 'Dog food', '75', '1691746541.webp', '2023-08-11 04:05:41', '2023-08-12 03:39:18'),
 (11, 'Tuna Sandwiches', '1500.00', 'Cat food', '100', '1691746627.webp', '2023-08-11 04:07:07', '2023-08-12 03:39:33'),
-(12, 'Cat Crispy Pouches', '850.00', 'Cat food', '105', '1691747036.webp', '2023-08-11 04:13:56', '2023-08-23 17:11:18');
+(18, 'Chicken With Peas Broth And Gravy', '550', 'Cat Food', '100', '1695469124.jpg', '2023-09-23 06:08:44', '2023-09-23 23:11:51');
 
 -- --------------------------------------------------------
 
@@ -201,17 +211,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('29vzYnHEmrWeYjbvJtSVHCVBcLHj7pe2g6SEsRWa', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiV0lyemNTNTFydzVSa2JUeFZqTmdmcnpEdEQ4ZjVCZ3dUMzFwYzVRNiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1694523838),
-('5mq1kT3BbrpSBHq34bZk3g4TKFX4tIR4itCOS6Y5', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNlNQVXNTODFpWW1OcUFRNlFXd05ZSlBibEZPRUwwNFRLRUJPV2puWiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1692830385),
-('6yqfVvDS67wjKlMN7d5eQchULJWLRLN4mlHzVev9', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.54', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiWXFONW9wZ0ExbElTZEY2SmhyandkZ3BZQnJRdWVndFNXYUxLRXNKdiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9yZWRpcmVjdCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7fQ==', 1692828591),
-('7CN0IjfiDHWxUqD2d8OLW8GKlUwaHum2S0YBjOGb', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiS0F1VGNhWnk1c1pkVzZPVkpoeGp0Y3FVaUlKSlZMUEJ0RkYzeGJ4ZCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1694576565),
-('9FRgAd4RV9lFN0D8be2SYLyNh4nRkFrwaBQ6WDfz', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiOGEwVVBJVE5oZHFZN0c5MkVvelNVYW1uRmJodnlNenJ6Mnl2RFdVYiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1693194950),
-('AIJuieJTjHxAAijvZkSbULlxvsjtXk0kFwRNQqX5', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiM3RMZGxjWkx5RG1QazgzQnFaRUJma09aRDM1Z09sdjJ4RVVyNnJTdSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9Ib21lcHJvZHVjdCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1694447183),
-('aN5YkSVPkhe3l1VhXCbwMD73mTnypmme7kmE5nEO', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.62', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiNmswbVVYa243dTA5d0x3TXVuUDlTaUpCZ1BGZGRxNzRnc21zbnBYTyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9wcm9kdWN0Ijt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6Mjt9', 1693173807),
-('fXpAHdlRHb0Cc8suoj7Q0YgQJCeLwxz0SdVzN7LV', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.54', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiVEY0b2hmU0Z4VGQwYmZLbWl1eHh1ZHo3U1hTSXZCUGxzakFtNU1VWCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC8/cGFnZT0yIjt9fQ==', 1692830496),
-('GdvZEYKXfo3wTQ80uCKAkpRV9xUEXLvhGX4SfZWX', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNWhsQlAxQloyRjdEMHBncFg0QVlZN09XcUlHZ0JMdkFHRG5wSDFvZyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1693195010),
-('KVwEeUuNKBwS70dhlCJVb1bMEr1VCSRpXPrvifoW', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiOFpHOG9OQ2s2ZUVrZEVOcjVaemtyWDVMZ0dzak9LUFRkZFY3cjh1OSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1693173838),
-('uHsWrNdA8bSaDK5UXEaHrq1h6M6vsltDbPP8KCbR', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.203', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNXdTVUFyZ2xMQVNEV28xaXc3Z2Y0ZVVBQkxCa05DQUJiZTZPemw3RiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC8/cGFnZT0yIjt9fQ==', 1692704596);
+('jfrdKClpce423QluwDxxYsKW7ZZhVwTc8o6bOw4E', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36 Edg/117.0.2045.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiZm5rZXdGQ0ZIWWhMbW1DZTRQcE43SzBiWDUyeTVmbXhMY3o0QUt0UiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fX0=', 1695530736);
 
 -- --------------------------------------------------------
 
@@ -246,7 +246,10 @@ INSERT INTO `users` (`id`, `name`, `email`, `usertype`, `phone`, `address`, `ema
 (1, 'pubudu Deepamal', 'pubududeepamal98@gmail.com', '0', '0765678765', 'pubududeepamal98@gmail.com', NULL, '$2y$10$yNjHGUjc/fNgR33QY78mkOTJiE88KWhyDBpXekdG0v15Mum.BrQkO', NULL, NULL, NULL, NULL, NULL, NULL, '2023-08-08 19:57:56', '2023-08-08 19:57:56'),
 (2, 'Admin', 'admin@gmail.com', '1', '0765678909', 'admin', NULL, '$2y$10$mbyQbiGqgnAwVVF6kva0U.j3JWBE6GSuEy0tY5YPlFvjnS2DuVeI.', NULL, NULL, NULL, NULL, NULL, NULL, '2023-08-08 20:00:29', '2023-08-08 20:00:29'),
 (3, 'nimesh pahasara', 'pubududeepamal2@gmail.com', '0', '0768767856', 'pubududeepamal2@gmail.com', NULL, '$2y$10$zcclF8MX6UuWuXGK3l02z.h8afICGI7d47R.B4IiGth8K2zJhCZnq', NULL, NULL, NULL, NULL, NULL, NULL, '2023-08-15 22:15:44', '2023-08-15 22:15:44'),
-(4, 'Selani alwis', 'Selanialwis@gmail.com', '0', '0765678765', 'Selanialwis@gmail.com', NULL, '$2y$10$LTUO3QHaOYAMA3MJghrOR.tcLkDzKpLE2ez4VY0pUuxS/mQ7/RSHa', NULL, NULL, NULL, NULL, NULL, NULL, '2023-08-15 22:20:42', '2023-08-15 22:20:42');
+(4, 'Selani alwis', 'Selanialwis@gmail.com', '0', '0765678765', 'Selanialwis@gmail.com', NULL, '$2y$10$LTUO3QHaOYAMA3MJghrOR.tcLkDzKpLE2ez4VY0pUuxS/mQ7/RSHa', NULL, NULL, NULL, NULL, NULL, NULL, '2023-08-15 22:20:42', '2023-08-15 22:20:42'),
+(5, 'Pubudu Deepamal', 'pubududeepamal8@gmail.com', '0', '123456789', 'pubududeepamal8@gmail.com', NULL, '$2y$10$Y4QGRRHwCEKOxPFZd1PSae24lvsl/inCehlmHsm21b5lPsuSB3YWK', NULL, NULL, NULL, NULL, NULL, NULL, '2023-09-23 04:27:52', '2023-09-23 04:27:52'),
+(6, 'nimesh pahasara', 'pubududeepamal23@gmail.com', '0', '11111111', 'pubududeepamal23@gmail.com', NULL, '$2y$10$fX2gu.uE9IeeBaIwSAwWVuxJmzoD8IOGzZVzSwCBpPU22uXjKUBPe', NULL, NULL, NULL, NULL, NULL, NULL, '2023-09-23 04:28:45', '2023-09-23 04:28:45'),
+(7, 'Thisath', 'Thisath@gmail.com', '0', '1234567890', 'Thisath@gmail.com', NULL, '$2y$10$n/LaZ3rzdkFzzRZ1Jm7A8elG26PSKQQmMEUd/6bbqgnRdTDdZ/rbq', NULL, NULL, NULL, NULL, NULL, NULL, '2023-09-23 23:11:06', '2023-09-23 23:11:06');
 
 --
 -- Indexes for dumped tables
@@ -320,7 +323,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `carts`
 --
 ALTER TABLE `carts`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -338,7 +341,7 @@ ALTER TABLE `migrations`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`
@@ -350,13 +353,13 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
