@@ -4,16 +4,16 @@
     .goog-te-gadget-simple {
     width: 170px;
     height: 40px;
-    background-color: #FFF;
-    border-left: 1px solid #D5D5D5;
-    border-top: 1px solid #9B9B9B;
-    border-bottom: 1px solid #E8E8E8;
-    border-right: 1px solid #D5D5D5;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
     font-size: 10pt;
     display: inline-block;
     padding-top: 1px;
     padding-bottom: 2px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 </style>
