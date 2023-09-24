@@ -1,4 +1,23 @@
 <!-- Header -->
+
+<style>
+    .goog-te-gadget-simple {
+    width: 156px;
+    height: 40px;
+    background-color: #FFF;
+    border-left: 1px solid #D5D5D5;
+    border-top: 1px solid #9B9B9B;
+    border-bottom: 1px solid #E8E8E8;
+    border-right: 1px solid #D5D5D5;
+    font-size: 10pt;
+    display: inline-block;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+</style>
+
 <header class="">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -22,7 +41,7 @@
 
                     <!-- Google Translate Widget -->
                     <li class="nav-item">
-                        <div class="nav-link" style="font-family: 'Times New Roman', Times, serif;" id="google_translate_element"></div>
+                        <div class="nav-link" style="font-family: 'Times New Roman', Times, serif;" id="google_translate_element" style="    height: 42px;"></div>
                     </li>
 
                     <li class="nav-item">
