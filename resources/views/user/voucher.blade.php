@@ -49,7 +49,7 @@
 
                 <div class="container mt-5">
                     <!-- Google Translate Widget -->
-                    <div id="google_translate_element" style="text-align: right;"></div>
+                    <div  class="nav-link" style="font-family: 'Times New Roman', Times, serif;" id="google_translate_element" style="text-align: right;"></div>
 
                     <div class="card p-4" style="background-color: #f7f7f7;" id="boxborder">
                         <h1 class="text-center vtitle" id="fonyfamily">Pet Shop Voucher</h1>
