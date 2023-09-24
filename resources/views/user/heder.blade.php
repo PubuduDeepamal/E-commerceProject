@@ -22,7 +22,7 @@
 
                     <!-- Google Translate Widget -->
                     <li class="nav-item">
-                        <div id="google_translate_element"></div>
+                        <div class="nav-link" style="font-family: 'Times New Roman', Times, serif;" id="google_translate_element"></div>
                     </li>
 
                     <li class="nav-item">
