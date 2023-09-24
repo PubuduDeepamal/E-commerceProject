@@ -6,6 +6,15 @@ use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\AdminController;
 
+use Stichoza\GoogleTranslate\GoogleTranslate;
+
+
+// Route::get('translate', function() {
+//     $lang = new GoogleTranslate('en');
+//     return $lang->setSource('en')->setTarget('sn')->translate("Jack pet");
+// });
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -49,3 +58,6 @@ route::get('/updatestatus/{id}',[adminController::class,'updatestatus']);
 route::get('/Homeproduct',[HomeController::class,'Homeproduct']);
 
 route::get('/abouthome',[HomeController::class,'abouthome']);
+
+route::get('/showemploye',[adminController::class,'showemploye']);
+
