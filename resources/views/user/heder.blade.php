@@ -2,7 +2,7 @@
 
 <style>
     .goog-te-gadget-simple {
-    width: 156px;
+    width: 170px;
     height: 40px;
     background-color: #FFF;
     border-left: 1px solid #D5D5D5;
