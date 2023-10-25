@@ -218,7 +218,7 @@ class HomeController extends Controller
 
             // Paginate the results manually
             $perPage = 6; // items per page
-            $currentPage = request()->get('page', 1); // Get current page from request, default is 1
+            $currentPage = request()->get('page', 1);
             $slicedCollection = array_slice($users, ($currentPage - 1) * $perPage, $perPage);
             $viewData['data'] = new \Illuminate\Pagination\LengthAwarePaginator(
                 $slicedCollection,
